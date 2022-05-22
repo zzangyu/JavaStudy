@@ -1,0 +1,9 @@
+package Class;
+
+public class TvTest3 {
+
+	public static void main(String[] args) {
+		Tv<Tv> tv = new Tv();
+	}
+
+}

@@ -1,0 +1,21 @@
+package ExceptionHandling;
+
+import java.util.Scanner;
+
+public class ExceptionQuizEx01 {
+
+	public static void main(String[] args) {
+		Scanner sc = null;
+		try {
+			sc = new Scanner(System.in);
+			String str = sc.next();
+			str.toString();
+			return str;
+		} catch (Exception e) {
+
+		} finally {
+			Scanner.close();
+		}
+	}
+
+}

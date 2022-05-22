@@ -1,0 +1,20 @@
+package HelloWorld;
+
+public class MyChar {
+
+	private char ch;
+
+	public MyChar(char ch) {
+		this.ch = ch;
+	}
+
+	public boolean isVowel() {
+		if(ch=='a'&&ch=='b'&&ch=='c'&&ch=='d'&&ch=='e') {
+			return true;
+		}else {
+		}return false;
+	}
+	
+	
+	
+}

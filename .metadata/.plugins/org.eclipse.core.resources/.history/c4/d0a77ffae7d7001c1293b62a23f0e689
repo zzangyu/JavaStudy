@@ -1,0 +1,33 @@
+package com.constex;
+
+class ThisEx{
+
+	String name, id, tel;
+	
+	public ThisEx() {
+		name = "Guest";
+		id = "123456-1234567";
+		tel = "010-4140-5191";
+	}
+	public ThisEx() {
+		
+	}
+	public ThisEx() {
+		
+	}
+	
+	
+	
+	
+	
+}
+
+
+public class ThisEx04 {
+
+	public static void main(String[] args) {
+		
+		
+	}
+
+}

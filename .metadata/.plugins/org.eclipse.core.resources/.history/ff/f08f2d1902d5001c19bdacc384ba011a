@@ -1,0 +1,15 @@
+package Practice;
+
+
+public class P1 {
+
+	public static void main(String[] args) {
+		int[] arr = new int[5];
+		for (int i : arr) {
+			arr[i] = i+1;
+		}
+		System.out.println(arr[0]);
+	}
+	
+
+}

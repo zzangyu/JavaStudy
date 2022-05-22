@@ -1,0 +1,9 @@
+package ExceptionHandling;
+
+public class ExceptionQuizEx01 {
+
+	public static void main(String[] args) {
+
+	}
+
+}

@@ -1,0 +1,15 @@
+package ExceptionHandling;
+
+public class ExceptionHandlingRunner {
+
+	public static void main(String[] args) {
+		method01();
+
+	}
+
+	private static void method01() {
+		String str = null;
+		str.length();
+	}
+
+}

@@ -1,0 +1,13 @@
+package com.constex;
+
+public class CircleEx2 {
+
+	public CircleEx2() {
+
+	}
+
+	public static void main(String[] args) {
+
+	}
+
+}

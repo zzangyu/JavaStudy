@@ -1,0 +1,15 @@
+package Generics;
+
+import java.util.ArrayList;
+
+public class MyCustomList {
+	ArrayList<MyCustomList> list = new ArrayList<>();
+
+	public void addElement(MyCustomList element) {
+		list.add(element);
+	}
+
+	public void removeElement(MyCustomList element) {
+		list.remove(element);
+	}
+}

@@ -1,0 +1,16 @@
+package com.constex;
+
+public class Circle {
+	private int radius; // 속성, 멤버변수, 필드
+	private String name;
+
+	public Circle() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Circle(int radius, int length) {
+		this.radius = radius;
+		this.length = length;
+	}
+
+}

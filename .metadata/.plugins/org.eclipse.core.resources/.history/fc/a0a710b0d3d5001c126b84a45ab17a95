@@ -1,0 +1,7 @@
+package Generics;
+
+import java.util.ArrayList;
+
+public class MyCustomList {
+	ArrayList list = new ArrayList();
+}

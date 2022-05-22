@@ -1,0 +1,45 @@
+package HelloWorld;
+
+public class MyChar {
+
+	private char ch;
+
+	public MyChar(char ch) {
+		this.ch = ch;
+	}
+
+	public boolean isVowel() {
+		if (ch == 'a' || ch == 'i' || ch == 'e' ||
+				ch == 'o' || ch == 'u') {
+			return true;
+		} else if(ch == 'A' || ch == 'I' || ch == 'E' ||
+				ch == 'O' || ch == 'U'){
+			return true;
+		}
+		return false;
+	}
+
+	public boolean isDigit() {
+		if(ch >=48 && ch <= 57) {
+			return true;
+		}
+		
+		return false;
+	}
+
+	public boolean isAlphaber() {
+		if((ch >= 65 && ch <= 91 ) || (ch >= 97 && ch <= 122)) {
+			return true;
+		}
+		return false;
+	}
+
+//	public void isConsonant() {
+//		if(ch != 'a' || ch != 'i' || ch != 'e' ||
+//				ch != 'o' || ch != 'u') {
+//			return ;
+//		}
+//		
+//	}
+
+}

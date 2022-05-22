@@ -1,0 +1,12 @@
+package com.constex;
+
+public class BookEx {
+
+	public static void main(String[] args) {
+		Book book1 = new Book("¤»¤»¤©¤³¤³¤³");
+		Book book2 = new Book("¤»¤»¤©¤³¤³¤³", "ÇÑÂù±Ô");
+		System.out.println(book1.title);
+		System.out.println(book2.title+book2.author);
+	}
+
+}

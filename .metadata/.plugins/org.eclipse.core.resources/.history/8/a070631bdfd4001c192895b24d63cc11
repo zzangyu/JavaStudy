@@ -1,0 +1,16 @@
+package Class;
+
+public class AccountEx {
+
+	public static void main(String[] args) {
+		Account ac = new Account();
+		ac.setMoney(1000000, "1234");
+		int myPay = ac.getMoney();
+		System.out.println("나의 현재 잔액: " + myPay);
+
+		ac.donnaena(10000, "1234");
+		int myPay2 = ac.getMoney()
+		System.out.println("출금 후 잔액: " + myPay2);
+	}
+
+}

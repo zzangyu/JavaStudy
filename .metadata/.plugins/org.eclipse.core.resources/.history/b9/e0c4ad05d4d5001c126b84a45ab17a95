@@ -1,0 +1,12 @@
+package Generics;
+
+public class genericRunner01 {
+
+	public static void main(String[] args) {
+		MyCustomList list = new MyCustomList();
+		
+		MyCustomList list2 = new MyCustomList();
+		
+	}
+
+}

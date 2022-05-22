@@ -1,0 +1,26 @@
+package HelloWorld;
+
+public class MyChar {
+
+	private char ch;
+
+	public MyChar(char ch) {
+		this.ch = ch;
+	}
+
+	public boolean isVowel() {
+		if (ch == 'a' || ch == 'i' || ch == 'e' ||
+				ch == 'o' || ch == 'u') {
+			return true;
+		} else if(ch == 'A' || ch == 'I' || ch == 'E' ||
+				ch == 'O' || ch == 'U'){
+		}
+		return false;
+	}
+
+	public char[] isNumber() {
+		
+		return null;
+	}
+
+}

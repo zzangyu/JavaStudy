@@ -1,0 +1,25 @@
+package Practice;
+
+public class P1 {
+
+	public static void main(String[] args) {
+		int[] arr = new int[5];
+		for (int i = 0; i < arr.length; i++) {
+			arr[i] = i + 1;
+			System.out.print(arr[i]);
+		}
+		System.out.println();
+		int[] arr2 = new int[arr.length * 2];
+		for (int i = 0; i < arr.length; i++) {
+			arr2[i] = arr[i];
+			System.out.print(arr2[i]);
+		}
+		System.out.println();
+		arr = arr2;
+		for (int i : arr) {
+			System.out.print(arr[i]);
+		}
+
+	}
+
+}

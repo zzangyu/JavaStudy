@@ -1,0 +1,27 @@
+package com.constex;
+
+class BookEx{
+	String title;
+	String author;
+	
+	public void show() {
+		System.out.println(title+ " "+ author);
+	}
+	
+	public BookEx() {
+		// TODO Auto-generated constructor stub
+	}
+	public BookEx(String a) {
+		// TODO Auto-generated constructor stub
+	}
+	public BookEx(String a, String b) {
+		// TODO Auto-generated constructor stub
+	}
+}
+public class ThisEx03 {
+
+	public static void main(String[] args) {
+
+	}
+
+}

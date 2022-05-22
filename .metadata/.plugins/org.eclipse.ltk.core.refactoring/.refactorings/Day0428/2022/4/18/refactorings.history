@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;study.팩토리얼&apos; to &apos;팩토리얼Ex01&apos;&#x0D;&#x0A;- Original project: &apos;Day0428&apos;&#x0D;&#x0A;- Original element: &apos;study.팩토리얼&apos;&#x0D;&#x0A;- Renamed element: &apos;study.팩토리얼Ex01&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;팩토리얼&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;study{팩토리얼.java[팩토리얼" matchStrategy="1" name="팩토리얼Ex01" qualified="false" references="true" similarDeclarations="false" stamp="1651107657437" textual="false" version="1.0"/>
+</session>

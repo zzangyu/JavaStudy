@@ -1,0 +1,13 @@
+package Method;
+
+public class MethodEx04 {
+
+	public static int plus(int x, y) {
+		return 0;
+	}
+
+	public static void main(String[] args) {
+
+	}
+
+}

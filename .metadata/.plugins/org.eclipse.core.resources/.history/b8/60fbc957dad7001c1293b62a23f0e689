@@ -1,0 +1,16 @@
+package com.constex;
+
+public class CircleEx2 {
+
+	static int radius;
+
+	static void set(int r) {
+		radius = r;
+		System.out.println(radius);
+	}
+
+	public static void main(String[] args) {
+		set(20);
+	}
+
+}

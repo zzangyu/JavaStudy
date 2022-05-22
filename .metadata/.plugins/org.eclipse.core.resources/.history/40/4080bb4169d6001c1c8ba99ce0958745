@@ -1,0 +1,23 @@
+package Rectangle;
+
+import java.util.Scanner;
+
+public class RectangleEx01 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		Rectangle r = new Rectangle();
+		System.out.print("가로");
+		r.height = sc.nextInt();
+		System.out.print("세로");
+		r.width = sc.nextInt();
+
+		int Area = r.getArea();
+		System.out.println(Area);
+		int Circum = r.getCircum();
+		System.out.println(Circum);
+
+	}
+
+}

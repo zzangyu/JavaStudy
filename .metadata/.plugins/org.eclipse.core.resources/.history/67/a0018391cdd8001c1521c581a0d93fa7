@@ -1,0 +1,9 @@
+package System.out;
+
+public class ThreadBasicsRunner2 {
+
+	public static void main(String[] args) {
+
+	}
+
+}

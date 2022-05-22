@@ -1,0 +1,14 @@
+package practice;
+
+import java.util.List;
+import java.util.PriorityQueue;
+import java.util.Queue;
+import java.util.Set;
+
+public class QueueEx {
+	public static void main(String[] args) {
+		Queue<String> queue = new PriorityQueue<>(Set.of("a", "b"));
+		queue.addAll(List.of("Zebra", "Monkey", "Cat"));
+		System.out.println(queue);
+	}
+}

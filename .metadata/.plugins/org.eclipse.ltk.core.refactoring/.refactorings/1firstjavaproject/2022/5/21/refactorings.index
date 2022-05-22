@@ -1,0 +1,13 @@
+1652590444816	Rename type 'Flyable'
+1652591593273	Delete element
+1652591597560	Delete element
+1652591600778	Delete element
+1652656860967	Rename type 'Animal2'
+1652674789800	Delete element
+1652786325045	Delete element
+1652915389931	Extract method 'printBasic'
+1652958633211	Extract method 'normalSum'
+1652960418024	Extract method 'fpSum'
+1652960505080	Inline local variable 'sum'
+1653113796306	Delete element
+1653113806750	Rename type 'TreadBasicsRunner'

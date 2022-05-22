@@ -1,0 +1,17 @@
+package com.constex;
+
+public class BookEx {
+
+	public static void main(String[] args) {
+		Book a = new Book();
+		Book b = new Book("어린왕자", "생텍쥐폐리");
+		Book loveStory = new Book("춘향전");
+		System.out.println(b.title + " -> " + b.author);
+		System.out.println(loveStory.title + "-> " + loveStory.author);
+
+		a.setTitle("창가의 토토");
+		a.setAuthor("쿠로야나기 테츠코");
+
+	}
+
+}

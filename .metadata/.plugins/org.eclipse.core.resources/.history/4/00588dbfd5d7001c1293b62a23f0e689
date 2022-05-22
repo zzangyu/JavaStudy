@@ -1,0 +1,9 @@
+package com.constex;
+
+public class CircleEx {
+
+	public static void main(String[] args) {
+		Circle c = new Circle();
+	}
+
+}

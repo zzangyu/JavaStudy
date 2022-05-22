@@ -1,0 +1,11 @@
+package practice;
+
+import java.util.List;
+
+public class Collections3 {
+
+	public static void main(String[] args) {
+		List<Student4> students = List.of(1, 23, 325, 23, 19);
+	}
+
+}

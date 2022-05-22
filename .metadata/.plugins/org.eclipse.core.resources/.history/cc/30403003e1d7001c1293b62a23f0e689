@@ -1,0 +1,14 @@
+package com.constex;
+
+public class ThisEx02 {
+
+	int aa;
+
+	public ThisEx02() {
+	}
+
+	public static void main(String[] args) {
+
+	}
+
+}

@@ -1,0 +1,12 @@
+package com.constex;
+
+public class Circle {
+	private int radius;
+	private int length;
+
+	public Circle(int width, int length) {
+		this.width = width;
+		this.length = length;
+	}
+
+}

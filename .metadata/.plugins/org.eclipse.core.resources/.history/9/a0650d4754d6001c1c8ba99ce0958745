@@ -1,0 +1,33 @@
+package Method;
+
+public class MethodEx04 {
+
+	public static int plus(int x, int y) {
+		return x + y;
+	}
+
+	public static int min(int x, int y) {
+		return x - y;
+	}
+
+	public static int multi(int x, int y) {
+		return x * y;
+	}
+
+	public static int div(int x, int y) {
+		return x / y;
+	}
+
+	public static int per(int x, int y) {
+		return x % y;
+	}
+
+	public static void display(int a, char b, int c, int d) { // a: 첫번째 수 b: 연산자 c: 두번째 수 d: 결과 값
+		System.out.println("\n " + a + " " + b + " " + c + " = " + d);
+	}
+
+	public static void main(String[] args) {
+		plus(1, 3);
+	}
+
+}

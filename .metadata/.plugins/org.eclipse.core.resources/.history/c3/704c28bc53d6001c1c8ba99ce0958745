@@ -1,0 +1,29 @@
+package Method;
+
+public class MethodEx04 {
+
+	public static int plus(int x, int y) {
+		return x + y;
+	}
+
+	public static int min(int x, int y) {
+		return x - y;
+	}
+
+	public static int multi(int x, int y) {
+		return x * y;
+	}
+
+	public static int div(int x, int y) {
+		return x / y;
+	}
+
+	public static int per(int x, int y) {
+		return x % y;
+	}
+
+	public static void main(String[] args) {
+
+	}
+
+}

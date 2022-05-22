@@ -1,0 +1,10 @@
+package com.constex;
+
+public class BookEx {
+
+	public static void main(String[] args) {
+		Book book = new Book("せせぉこここ");
+		System.out.println(book);
+	}
+
+}

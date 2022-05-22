@@ -1,0 +1,15 @@
+package practice;
+
+class Gogo extends Thread {
+	for(int i = number*100; i < number*100+99;i++)
+}
+
+public class ThreadEx01{
+
+	public static void main(String[] args) {
+		
+		
+		
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.constex;
+
+public class CircleEx {
+
+	public static void main(String[] args) {
+		Circle c1 = new Circle();
+		Circle c2 = new Circle(10, "원");
+		System.out.println("원의 반지름은 "+c2.name+", 이고 이름은 "+c2.radius+"이다.");
+	}
+
+}

@@ -1,0 +1,26 @@
+package com.constex;
+
+/*
+this: 객체 자신으르
+ */
+class CircleEx001 {
+	int radius;
+
+	public CircleEx001(int r) {
+		this.radius = r;
+	}
+
+	public int getRadius() {
+		return radius;
+	}
+}
+
+public class ThisEx01 {
+
+	public static void main(String[] args) {
+		CircleEx001 c = new CircleEx001(5);
+		c.getRadius();
+
+	}
+
+}

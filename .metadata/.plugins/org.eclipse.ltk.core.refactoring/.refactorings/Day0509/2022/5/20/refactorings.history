@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Array.HAGISIRO&apos; to &apos;WhatisArray&apos;&#x0D;&#x0A;- Original project: &apos;Day0509&apos;&#x0D;&#x0A;- Original element: &apos;Array.HAGISIRO&apos;&#x0D;&#x0A;- Renamed element: &apos;Array.WhatisArray&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;HAGISIRO&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;Array{HAGISIRO.java[HAGISIRO" matchStrategy="1" name="WhatisArray" qualified="false" references="true" similarDeclarations="false" stamp="1652059016803" textual="false" version="1.0"/>
+</session>

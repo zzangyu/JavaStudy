@@ -1,0 +1,18 @@
+package Rectangle;
+
+public class RectangleEx01 {
+
+	public static void main(String[] args) {
+		Rectangle r = new Rectangle();
+
+		r.height = 4;
+		r.width = 3;
+
+		int Area = r.getArea();
+		System.out.println(Area);
+		int Circum = r.getCircum();
+		System.out.println(Circum);
+
+	}
+
+}

@@ -1,0 +1,17 @@
+package Class;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class ID_Ex02 {
+	
+	private int x;
+	private int y;
+	private BufferedReader br;
+	
+	public ID_Ex02() {
+		br = new BufferedReader(new InputStreamReader(System.in));
+	}
+	
+
+}

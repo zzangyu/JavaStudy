@@ -1,0 +1,5 @@
+package Generics;
+
+public class MyCustomList {
+	ArrayList list = new ArrayList();
+}

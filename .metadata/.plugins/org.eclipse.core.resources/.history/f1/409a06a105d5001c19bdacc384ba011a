@@ -1,0 +1,9 @@
+package practice;
+
+import java.util.LinkedHashSet;
+import java.util.Set;
+
+public class SetEX {
+	Set<Integer> numbers = new LinkedHashSet<>();
+
+}

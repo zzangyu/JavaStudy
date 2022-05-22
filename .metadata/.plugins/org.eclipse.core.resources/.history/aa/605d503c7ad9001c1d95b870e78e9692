@@ -1,0 +1,18 @@
+package Thread;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class ExecutorServiceRunner {
+
+	public static void main(String[] args) {
+		ExecutorService executorService = Executors.newSingleThreadExecutor();
+		// 한번에 하나의 Thread를 실행하도록 하는 기능
+
+		executorService.execute(new Task1);
+
+
+
+	}
+
+}

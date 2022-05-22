@@ -1,0 +1,13 @@
+package practice;
+
+public class AAA {
+
+	String aa() {
+		return "aa";
+	}
+
+	public static void main(String[] args) {
+		System.out.println(aa());
+	}
+
+}

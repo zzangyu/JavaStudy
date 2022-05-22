@@ -1,0 +1,32 @@
+package MethodEx;
+
+public class OverloadingEx02 {
+	// 접근제한자는 상관 없다 !
+	public void getLength(int n) {
+		String s = String.valueOf(n);
+		getLength(s);
+	}
+	/*
+	void getLength(int n1, int n2) {
+
+	}
+	private void getLength(int n1, int n2, int n3) {
+
+	}
+	 */
+	private void getLength(float n) {
+		String s = String.valueOf(n);
+		getLength(s);
+	}
+
+	private int getLength(String s) {
+		System.out.println("입력한 값의 길이: " + s.length());
+		return 0;
+	}
+
+	public static void main(String[] args) {
+		OverloadingEx01 oe1 = new OverloadingEx01();
+
+	}
+
+}

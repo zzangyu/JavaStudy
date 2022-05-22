@@ -1,0 +1,9 @@
+package pratice;
+
+public class a {
+	public static void main(String[] args) {
+		int a = 12312412;
+		String s = String.valueOf(a);
+		System.out.println(s.length());
+	}
+}

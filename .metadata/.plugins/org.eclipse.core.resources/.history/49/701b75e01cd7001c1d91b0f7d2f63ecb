@@ -1,0 +1,8 @@
+package Class;
+
+import java.io.BufferedReader;
+
+public class ID throws IOException{
+	private BufferedReader br;
+	
+}

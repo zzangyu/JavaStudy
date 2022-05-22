@@ -1,0 +1,9 @@
+package Class;
+
+public class ID_Ex {
+	public static void main(String[] args) {
+		ID id = new ID();
+		id.setName();
+		id.setJumin();
+	}
+}

@@ -1,0 +1,31 @@
+package ExceptionHandling;
+
+public class ExceptionHandlingRunner2 {
+
+	public static void main(String[] args) {
+		method01();
+		System.out.println("main ended");
+	}
+
+	private static void method01() {
+		method02();
+		System.out.println("method01 ended");
+	}
+
+	private static void method02() {
+		try {
+//			String str = null;
+//			str.length();
+			int[] i = { 1, 2 };
+			System.out.println(i[3]);
+			System.out.println("응 이건 안보여~");
+		} catch (NullPointerException ex) {
+			System.out.println("NullPointerException");
+			ex.printStackTrace();
+		} catch (Exception ex) {
+			ex.printStackTrace();
+		}
+		System.out.println("method02 ended");
+	}
+
+}

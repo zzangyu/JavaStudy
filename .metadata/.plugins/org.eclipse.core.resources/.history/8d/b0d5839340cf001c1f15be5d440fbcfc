@@ -1,0 +1,21 @@
+package Array;
+
+public class ArrayEx03 {
+	
+	public static void main(String[] args) {
+		int aa[][] = new int[5][ ];
+		
+		int a = 1;
+		
+		for(int i = 0; i <= 4; i++) {
+			for(int j = 0; j <= i; j++) {
+				aa[i][j] = a;
+				System.out.println(aa[i][j]);
+				a++;
+			}System.out.println();
+		}
+		
+		
+	}
+
+}

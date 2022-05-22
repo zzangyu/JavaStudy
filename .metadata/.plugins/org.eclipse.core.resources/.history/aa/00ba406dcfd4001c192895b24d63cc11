@@ -1,0 +1,16 @@
+package practice;
+
+public class AAA {
+
+	static void aa() {
+
+		String aa = "aa";
+		System.out.println(aa);
+	}
+
+	public static void main(String[] args) {
+
+		aa();
+	}
+
+}

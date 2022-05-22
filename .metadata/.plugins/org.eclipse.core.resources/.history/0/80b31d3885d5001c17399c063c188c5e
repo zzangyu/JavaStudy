@@ -1,0 +1,11 @@
+package Class;
+
+public class TvTest3 {
+
+	public static void main(String[] args) {
+		Tv[] tv = new Tv[3];
+		
+		
+	}
+
+}

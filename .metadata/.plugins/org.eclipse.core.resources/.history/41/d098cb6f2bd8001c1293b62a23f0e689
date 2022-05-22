@@ -1,0 +1,20 @@
+package pratice;
+
+import java.util.Scanner;
+
+public class asd {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		while (true) {
+			System.out.println("GOGO");
+			String str = sc.next();
+			sc.next();
+			if (!str.equals("N")||!str.equals("n"))
+				break;
+		}
+		System.out.println("STOP");
+	}
+
+}

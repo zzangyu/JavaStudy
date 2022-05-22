@@ -1,0 +1,7 @@
+package practice;
+
+public class AnimalRunner2 {
+	public static void main(String[] args) {
+		Animal2[] animals = { new Dog2(), new Cat2() };
+	}
+}

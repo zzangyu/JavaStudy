@@ -1,0 +1,14 @@
+package Method;
+
+public class MethodEx02_1 {
+
+	public static void star() {
+
+		System.out.println("*");
+	}
+
+	public static void main(String[] args) {
+
+	}
+
+}

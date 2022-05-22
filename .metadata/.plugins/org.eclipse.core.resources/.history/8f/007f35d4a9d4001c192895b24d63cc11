@@ -1,0 +1,16 @@
+package practice;
+
+class Student4 implements comparable{
+	private id;
+	private name;
+}
+
+import java.util.List;
+
+public class Collections3 {
+
+	public static void main(String[] args) {
+		List<Student4> students = List.of(new Student4(1, "haha"), new Student4(5, "koko"), new Student4(0, "sinchan"));
+	}
+
+}

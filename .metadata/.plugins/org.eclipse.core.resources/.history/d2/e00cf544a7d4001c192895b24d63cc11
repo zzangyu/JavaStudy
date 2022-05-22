@@ -1,0 +1,14 @@
+package practice;
+
+public class Student3 {
+private int id;
+private String name;
+}
+
+public class Collections2 {
+
+	public static void main(String[] args) {
+
+	}
+
+}

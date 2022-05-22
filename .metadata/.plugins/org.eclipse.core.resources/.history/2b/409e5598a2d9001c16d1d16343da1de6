@@ -1,0 +1,21 @@
+package ExceptionHandling;
+
+import java.sql.Connection;
+
+public class ExceptionQuizEx01 {
+
+	public static void main(String[] args) {
+		Connection connection = new Connection();
+		connection.open();
+		try {
+			String str = null;
+			str.toString();
+			return;
+		}catch(Exception e) {
+		
+		}finally {
+			connection.close();
+		}
+	}
+
+}

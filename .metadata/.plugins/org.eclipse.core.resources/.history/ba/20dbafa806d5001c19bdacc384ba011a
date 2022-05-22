@@ -1,0 +1,14 @@
+package practice;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class CharacterSetEx {
+
+	public static void main(String[] args) {
+		List<Character> characters = List.of('a', 'z', 'a', 'b', 'z', 'f');
+		List<Character> charactersAl = new ArrayList(characters);
+		System.out.println(charactersAl);
+	}
+
+}

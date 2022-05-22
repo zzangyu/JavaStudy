@@ -1,0 +1,18 @@
+package com.constex;
+
+class CircleEx001{
+	int radius;
+	
+	public CircleEx001(int r) {
+		this.radius = r;
+	}
+}
+
+public class ThisEx01 {
+	
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

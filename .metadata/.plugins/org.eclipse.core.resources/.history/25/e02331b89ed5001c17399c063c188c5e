@@ -1,0 +1,16 @@
+package Class;
+
+/*
+1. 메소드(멤버 함수)
+- 객체가 할 수 있는 동작들을 정의한 것임
+- 메소드의 종류는 두가지로 구분된다.
+	1) 인스턴스 메소드
+	2) Static 메소드
+ */
+public class MethodEx {
+
+	public int add(int i, int j) {
+		return i + j;
+	}
+
+}

@@ -1,0 +1,13 @@
+package Class;
+
+public class しけいしいけ {
+	public static void main(String[] args) {
+
+		System.out.println("爽肯腰硲 脊径(ex: 123456 - 1234567): ");
+		for (int i = 0; i < jumin.length; i++) {
+			jumin[i] = System.in.read() - 48;
+		}
+		System.in.read();
+		System.in.read();
+	}
+}

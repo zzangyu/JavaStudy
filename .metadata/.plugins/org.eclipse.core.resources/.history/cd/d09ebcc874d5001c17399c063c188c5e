@@ -1,0 +1,14 @@
+package practice;
+
+import java.util.HashMap;
+import java.util.Map;
+
+// "This is a great thing" 몇번씩 나오는가. 각 단어가 몇번이나 존재하는가
+public class MapEx {
+	public static void main(String[] args) {
+		String str = "This is an awesome occasion. " + "This has never happened before.";
+
+		Map<String, Integer> occurances = new HashMap<>();
+		occurances.put("A", 1);
+	}
+}

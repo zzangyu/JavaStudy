@@ -1,0 +1,36 @@
+package com.constex;
+
+class ThisEx {
+
+	String name, id, tel;
+
+	public ThisEx() {
+		this.name = "Guest";
+		this.id = "123456-1234567";
+		this.tel = "010-4140-5191";
+	}
+	
+	public ThisEx(String name) {
+		this();
+		this.name = name;
+	}
+
+	public ThisEx(String name, String id) {
+		this(name);
+		this.id = id;
+	}
+
+	public ThisEx(String name, String id, String tel) {
+		this(name, id);
+		this.tel = tel;
+	}
+
+}
+
+public class ThisEx04 {
+
+	public static void main(String[] args) {
+
+	}
+
+}

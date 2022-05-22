@@ -1,0 +1,13 @@
+package practice;
+
+import java.util.concurrent.Executors;
+
+
+
+public class ThreadEx02 {
+
+	public static void main(String[] args) {
+		ExecutorService ex = Executors.newFixedThreadPool(3);
+	}
+
+}

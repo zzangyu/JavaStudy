@@ -1,0 +1,13 @@
+package Generics;
+
+public class genericRunner01 {
+
+	public static void main(String[] args) {
+		MyCustomList<String> list = new MyCustomList<>();
+		list.addElement("Element 1");
+		list.addElement("Element 2");
+		MyCustomList<Integer> list2 = new MyCustomList<>();
+
+	}
+
+}

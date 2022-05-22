@@ -1,0 +1,14 @@
+Switch( ), case( ):, break;, default:(if문의 else역할)
+scanner써서 a에 입력한다.
+a = sc.nextint();
+switch(a)
+{
+case 1:
+	printf(~~);
+	break;
+case 2:
+	printf(~~);
+	break;
+default:
+	printf(~~);
+	break;

@@ -1,0 +1,16 @@
+package HelloWorld;
+
+public class MyCharRunner {
+
+	public static void main(String[] args) {
+		MyChar myChar = new MyChar('2');
+		System.out.println(myChar.isVowel()); //모음
+//		myChar.isConsonant(); // 자음
+		System.out.println(myChar.isDigit());
+//		System.out.println(myChar.isAlphaber());
+//		MyChar.printLowerCaseAlphabets();
+//		MyChar.printUpperCaseAlphabets();
+
+	}
+
+}

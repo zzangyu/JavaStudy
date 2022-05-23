@@ -17,7 +17,7 @@ class Derived extends Base {
 	}
 }
 
-public class inheritanceEx01 {
+public class BaseAndDerived {
 
 	public static void main(String[] args) {
 		Derived a = new Derived();

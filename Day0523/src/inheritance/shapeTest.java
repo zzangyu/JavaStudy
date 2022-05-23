@@ -10,7 +10,7 @@ class Shape {
 	}
 }
 
-class Circle extends Shape {
+class Circle2 extends Shape {
 
 	@Override
 	public void Shape() {
@@ -20,7 +20,7 @@ class Circle extends Shape {
 	}
 }
 
-class Triangle extends Shape {
+class Triangle2 extends Shape {
 	@Override
 	public void Shape() {
 
@@ -30,7 +30,7 @@ class Triangle extends Shape {
 public class shapeTest {
 
 	public static void main(String[] args) {
-		Circle c = new Circle();
+		Circle2 c = new Circle2();
 		c.Shape();
 	}
 

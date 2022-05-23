@@ -1,7 +1,0 @@
-package practice;
-
-public class AnimalRunner2 {
-	public static void main(String[] args) {
-
-	}
-}

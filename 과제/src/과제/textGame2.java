@@ -2,18 +2,21 @@ package 과제;
 
 import java.util.Scanner;
 
-class Map {
+class Map2 {
 	// 10*19
 	protected String[][] map = new String[10][19];
+	public String[][] monster = new String[10][19];
+	public String[][] man = new String[10][19];
 
-	public void gold() {
-		map[3][4] = "G";
+	public void gold(int x, int y) {
+		map[x][y] = "G";
 	}
 
 	public void monster() {
 		int x = (int) (Math.random() * 9) + 1;
 		int y = (int) (Math.random() * 18) + 1;
 		map[x][y] = "M";
+		monster[x][y] = map[x][y];
 	}
 
 	public void man(int x, int y) {
@@ -21,7 +24,7 @@ class Map {
 	}
 }
 
-class Frame extends Map {
+class MaFrame extends Map2 {
 	public void mapFrame(int x, int y) {
 		for (int i = 0; i < map.length; i++) {
 			map[i] = new String[19];
@@ -31,9 +34,10 @@ class Frame extends Map {
 				} else {
 					map[i][j] = "  ";
 				}
-				gold();
+				gold(3, 4);
 				monster();
 				man(x, y);
+				man[x][y] = map[x][y];
 				System.out.print(map[i][j]);
 			}
 			System.out.println();
@@ -41,7 +45,7 @@ class Frame extends Map {
 	}
 }
 
-class Move extends MaFrame {
+class Move2 extends MaFrame {
 	Scanner sc = new Scanner(System.in);
 
 	@Override
@@ -50,7 +54,7 @@ class Move extends MaFrame {
 			System.out.println("###################");
 			super.mapFrame(x, y);
 			System.out.println("###################");
-			System.out.print("위(J) 아래(K) 왼(H) 오(I) : ");
+			System.out.print("위(J) 아래(K) 왼쪽(H) 오른쪽(I) : ");
 			String a = sc.next();
 			if (a.equals("J")) {
 				--x;
@@ -61,15 +65,21 @@ class Move extends MaFrame {
 			} else if (a.equals("I")) {
 				++y;
 			}
-
+			if (man[x][y] == monster[x][y]) {
+				System.out.println("지석진 아웃 ! 지석진 아웃 !");
+				break;
+			} else if (man[x][y] == map[3][4]) {
+				System.out.println("win !");
+				break;
+			}
 		}
 	}
 }
 
-public class textGame {
+public class textGame2 {
 
 	public static void main(String[] args) {
-		Move move = new Move();
+		Move2 move = new Move2();
 		move.mapFrame(6, 5);
 	}
 

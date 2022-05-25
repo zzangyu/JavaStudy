@@ -16,8 +16,12 @@ package com.inher;
 
  */
 class ECar {
-	protected int distance = 0;
-	protected int battery = 100;
+	private int distance = 0;
+	private int battery = 100;
+
+	public ECar() {
+
+	}
 
 	public void drive() {
 		this.distance++;
@@ -31,12 +35,16 @@ class ECar {
 	public void dispDistance() {
 		System.out.println("주행거리: " + distance + "km");
 	}
+
+	public static ECar getInstance() {
+		return new ECar();
+	}
 }
 
 public class CarRrRr {
 
 	public static void main(String[] args) {
-		ECar car = new ECar();
+		ECar car = ECar.getInstance();
 		car.drive();
 		car.drive();
 		car.drive();

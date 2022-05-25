@@ -8,13 +8,13 @@ class Map2 {
 	public String[][] monster = new String[10][19];
 	public String[][] man = new String[10][19];
 
-	public void gold(int x, int y) {
-		map[x][y] = "G";
+	public void gold() {
+		map[3][4] = "G";
 	}
 
-	public void monster() {
-		int x = (int) (Math.random() * 9) + 1;
-		int y = (int) (Math.random() * 18) + 1;
+	public void monster(int x, int y) {
+		x = (int) (Math.random() * 8) + 1;
+		y = (int) (Math.random() * 17) + 1;
 		map[x][y] = "M";
 		monster[x][y] = map[x][y];
 	}
@@ -26,6 +26,7 @@ class Map2 {
 
 class MaFrame extends Map2 {
 	public void mapFrame(int x, int y) {
+		boolean aa = false;
 		for (int i = 0; i < map.length; i++) {
 			map[i] = new String[19];
 			for (int j = 0; j < map[i].length; j++) {
@@ -34,12 +35,13 @@ class MaFrame extends Map2 {
 				} else {
 					map[i][j] = "  ";
 				}
-				gold(3, 4);
-				monster();
+				monster(x, y);
+				gold();
 				man(x, y);
-				man[x][y] = map[x][y];
+
 				System.out.print(map[i][j]);
 			}
+			System.out.print("\t  #");
 			System.out.println();
 		}
 	}
@@ -68,12 +70,13 @@ class Move2 extends MaFrame {
 			if (man[x][y] == monster[x][y]) {
 				System.out.println("Áö¼®Áø ¾Æ¿ô ! Áö¼®Áø ¾Æ¿ô !");
 				break;
-			} else if (man[x][y] == map[3][4]) {
+			} else if (map[x][y] == map[3][4]) {
 				System.out.println("win !");
 				break;
 			}
 		}
 	}
+
 }
 
 public class textGame2 {

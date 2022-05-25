@@ -41,4 +41,17 @@
     <fullyQualifiedTypeName name="pratice.dsa"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="java.util.Map.Entry"/>
+    <fullyQualifiedTypeName name="com.ex.AbstractBicycle"/>
+    <fullyQualifiedTypeName name="com.ex2.Diagram"/>
+    <fullyQualifiedTypeName name="com.ex2.Circle"/>
+    <fullyQualifiedTypeName name="com.ex2.Rectengle"/>
+    <fullyQualifiedTypeName name="com.ex2.Triangle"/>
+    <fullyQualifiedTypeName name="com.absex.AbsExam"/>
+    <fullyQualifiedTypeName name="java.lang.ProcessBuilder"/>
+    <fullyQualifiedTypeName name="com.starcraft.Unit"/>
+    <fullyQualifiedTypeName name="com.starcraft.Dropship"/>
+    <fullyQualifiedTypeName name="com.starcraft.SiegeTank"/>
+    <fullyQualifiedTypeName name="com.inter.InterfaceEx"/>
+    <fullyQualifiedTypeName name="com.inter.ex.Inter3"/>
+    <fullyQualifiedTypeName name="com.ex99.Flute"/>
 </qualifiedTypeNameHistroy>

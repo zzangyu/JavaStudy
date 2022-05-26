@@ -54,4 +54,5 @@
     <fullyQualifiedTypeName name="com.inter.InterfaceEx"/>
     <fullyQualifiedTypeName name="com.inter.ex.Inter3"/>
     <fullyQualifiedTypeName name="com.ex99.Flute"/>
+    <fullyQualifiedTypeName name="java.lang.Record"/>
 </qualifiedTypeNameHistroy>

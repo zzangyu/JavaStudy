@@ -10,7 +10,6 @@ public class InstrumentRunner {
 			i.volumeDown();
 			i.play();
 		}
-
 	}
 
 }

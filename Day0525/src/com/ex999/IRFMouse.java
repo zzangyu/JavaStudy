@@ -1,7 +1,8 @@
 package com.ex999;
 
 public interface IRFMouse {
-	String s = "무선방식 : 블루투스";
+	String RF_Type_IR = "적외선";
+	String RF_Type_BT = "블루투스";
 
 	void wconnect();
 

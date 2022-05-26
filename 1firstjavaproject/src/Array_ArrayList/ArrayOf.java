@@ -9,9 +9,9 @@ public class ArrayOf {
 
 		List<String> words = new ArrayList<>();
 		words.add("car");
-		words.add("bus");
-		words.add(1, "sss");
-		words.remove(1);
+		words.add(1, "bus");
+		words.add(2, "bnus");
+		words.add(2, "sss");
 		for (String word : words) {
 			System.out.println(word);
 		}

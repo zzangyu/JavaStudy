@@ -55,4 +55,7 @@
     <fullyQualifiedTypeName name="com.inter.ex.Inter3"/>
     <fullyQualifiedTypeName name="com.ex99.Flute"/>
     <fullyQualifiedTypeName name="java.lang.Record"/>
+    <fullyQualifiedTypeName name="com.inner.OuterEx.InnerEx"/>
+    <fullyQualifiedTypeName name="com.inner.MemberInner"/>
+    <fullyQualifiedTypeName name="com.inner.MemberInner.Inner"/>
 </qualifiedTypeNameHistroy>

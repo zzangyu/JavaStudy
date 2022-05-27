@@ -1,7 +1,0 @@
-package com.constex;
-
-public class Circle {
-	private int width;
-	private int length;
-	
-}

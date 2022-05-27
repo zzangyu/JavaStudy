@@ -4,7 +4,6 @@
     <fullyQualifiedTypeName name="java.io.EOFException"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="java.lang.Object"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
     <fullyQualifiedTypeName name="java.time.LocalTime"/>
@@ -58,4 +57,6 @@
     <fullyQualifiedTypeName name="com.inner.OuterEx.InnerEx"/>
     <fullyQualifiedTypeName name="com.inner.MemberInner"/>
     <fullyQualifiedTypeName name="com.inner.MemberInner.Inner"/>
+    <fullyQualifiedTypeName name="concurrency.CopyOnWriteArrayListRunner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>

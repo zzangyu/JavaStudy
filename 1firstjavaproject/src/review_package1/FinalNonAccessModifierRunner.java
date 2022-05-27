@@ -18,7 +18,9 @@ class SomeClass {
 //		자손 클래스 중 그 어떤것도 실행 순서를 바꾸는 것은 불가능하다.
 	}
 
-	final void dosomeOtherthing() {
+	final void dosomeOtherthing(final int arg) {
+		int a = arg; // 다른 변수에 값을 넣어주는 것은 되는데
+//		arg = 5;	// final int arg에는 값을 넣어주는 것이 안된다.
 	}
 }
 
@@ -41,7 +43,9 @@ class ExtendingClass extends SomeClass {
 public class FinalNonAccessModifierRunner {
 
 	public static void main(String[] args) {
-
+		final int i;
+		i = 5;
+//		i = 7;  // final이라 바뀌지 않는다. 값은 초기에 한번만 부여 될 수 있다.
 	}
 
 }

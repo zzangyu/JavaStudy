@@ -21,6 +21,7 @@ class SomeClass {
 	final void dosomeOtherthing(final int arg) {
 		int a = arg; // 다른 변수에 값을 넣어주는 것은 되는데
 //		arg = 5;	// final int arg에는 값을 넣어주는 것이 안된다.
+		// 인자에 final을 넣어주는 경우는 보편적으로 사용하는것을 추천한다,,
 	}
 }
 

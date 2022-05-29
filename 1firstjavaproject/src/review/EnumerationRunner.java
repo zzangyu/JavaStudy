@@ -17,7 +17,7 @@ public class EnumerationRunner {
 		System.out.println(Arrays.toString(Season.values()));
 
 		System.out.println(Arrays.toString(DayOfWeek.values()));// API에 있는 DayOfWeek 사용
-		System.out.println(DayOfWeek.of(0)); // 특정 요일 찾는 법!
+		System.out.println(DayOfWeek.of(3)); // 특정 요일 찾는 법!
 		System.out.println(Arrays.toString(Month.values()));
 		System.out.println(Month.of(3)); // 특정 월 찾는 법!
 

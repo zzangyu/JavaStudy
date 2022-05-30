@@ -12,11 +12,12 @@ public class Class_Test001 {
 
 	public static void main(String[] args) {
 		int a;
-//		System.out.println(a); compile error 뜸 !
+		// System.out.println(a); compile error 뜸 !
 		int b = 10;
 		System.out.println("b: " + b);
 		System.out.println("c: " + c); // static이라 바로 사용 가능 !
 		System.out.println("d: " + new Class_Test001().d);
+
 	}
 
 }

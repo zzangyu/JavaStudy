@@ -3,38 +3,41 @@ package com.member;
 import java.util.Scanner;
 
 public class DeleteAction implements Action {
-	MemberVO[] members = MemberMain.members;
-	MemberVO[] member = new MemberVO[members.length];
 
 	@Override
 	public void execute(Scanner sc) {
-		System.out.println("삭제 할 회원 정보");
-		System.out.println("삭제 할 회원 정보 이름");
-		System.out.println("이름 입력: ");
+		System.out.print("삭제할 회원의 이름을 입력하세요 - ");
 		String name = sc.next();
-
 		deleteMember(name);
-		for (int i = 0; i < MemberMain.members.length; i++) {
-			if (!members[i].getName().equals(name)) {
-				System.out.println("삭제 할 회원 정보가 존재하지 않습니다.");
-				return;
-			} else {
-
-			}
-
-		}
 	}
 
 	private void deleteMember(String name) {
 
+		int deleteIndex = -1; // 회원이 없다고 가정
+		MemberVO[] members = MemberMain.members;
+		MemberVO[] temp = null;
+
 		for (int i = 0; i < members.length; i++) {
-			if (!members[i].getName().equals(name)) {
-
-				member[i] = members[i];
-				members[i] = member[i];
+			if (members[i].getName().equals(name)) {
+				deleteIndex = i;
 			}
-
+		}
+		if (deleteIndex == -1) {
+			System.out.println("회원 정보가 존재하지 않습니다.");
+			return;
+		}
+		if (members.length >= 1) {
+			temp = new MemberVO[members.length - 1];
+			for (int i = 0; i < members.length; i++) {
+				if (i == deleteIndex) {
+					continue;
+				} else if (i > deleteIndex) {
+					temp[i - 1] = members[i];
+				} else {
+					temp[i] = members[i];
+				}
+			}
+			MemberMain.members = temp;
 		}
 	}
-
 }

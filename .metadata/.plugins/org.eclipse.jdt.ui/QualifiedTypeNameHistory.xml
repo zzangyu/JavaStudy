@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="javax.xml.validation.SchemaFactoryLoader"/>
-    <fullyQualifiedTypeName name="Collection.Student"/>
-    <fullyQualifiedTypeName name="java.util.Comparator"/>
     <fullyQualifiedTypeName name="Collection.DescendingStudentComparator"/>
-    <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="practice.Cat"/>
     <fullyQualifiedTypeName name="practice.Collections2"/>
     <fullyQualifiedTypeName name="java.lang.Comparable"/>
     <fullyQualifiedTypeName name="java.lang.StackOverflowError"/>
     <fullyQualifiedTypeName name="Class.Car"/>
     <fullyQualifiedTypeName name="Class.Book"/>
-    <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="java.io.BufferedInputStream"/>
     <fullyQualifiedTypeName name="java.util.Calendar"/>
     <fullyQualifiedTypeName name="java.util.concurrent.Executors"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="inheritance.Shape"/>
     <fullyQualifiedTypeName name="java.io.BufferedReader"/>
     <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
@@ -60,4 +54,10 @@
     <fullyQualifiedTypeName name="com.member.UpdateAction"/>
     <fullyQualifiedTypeName name="review.Client"/>
     <fullyQualifiedTypeName name="review_package1.ExampleClass"/>
+    <fullyQualifiedTypeName name="review.NestedClassRunner.InnerClass"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.time.Month"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.logging.Logger"/>
 </qualifiedTypeNameHistroy>

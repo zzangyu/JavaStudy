@@ -1,4 +1,4 @@
-package com.study;
+package com.study.member;
 
 public class Member_Search {
 	Member[] members = new Member[5];

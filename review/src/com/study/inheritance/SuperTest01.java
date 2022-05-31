@@ -1,9 +1,9 @@
 package com.study.inheritance;
 
 class Sawon {
-	String name = "»×»§";
-	String dept = "Å©Å©·ç»æ»Í";
-	int salary = 2000000;
+	String name;
+	String dept;
+	int salary;
 
 	String displayInfo() {
 		return "ÀÌ¸§: " + name + ", ºÎ¼­: " + dept + ", ¿¬ºÀ: " + salary;
@@ -12,7 +12,7 @@ class Sawon {
 
 class Sales extends Sawon {
 
-	int commition = 10000000;
+	int commition;
 
 	@Override
 	String displayInfo() {

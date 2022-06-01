@@ -12,9 +12,9 @@ class Map2 {
 		map[3][4] = "G";
 	}
 
-	public void monster(int x, int y) {
-		x = (int) (Math.random() * 8) + 1;
-		y = (int) (Math.random() * 17) + 1;
+	public void monster() {
+		int x = (int) (Math.random() * 8) + 1;
+		int y = (int) (Math.random() * 17) + 1;
 		map[x][y] = "M";
 		monster[x][y] = map[x][y];
 	}
@@ -35,7 +35,7 @@ class MaFrame extends Map2 {
 				} else {
 					map[i][j] = "  ";
 				}
-				monster(x, y);
+				monster();
 				gold();
 				man(x, y);
 
@@ -83,7 +83,7 @@ public class textGame2 {
 
 	public static void main(String[] args) {
 		Move2 move = new Move2();
-		move.mapFrame(6, 5);
+		move.mapFrame(5, 5);
 	}
 
 }

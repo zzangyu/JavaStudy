@@ -22,16 +22,10 @@ class Card2 {
 		System.out.println("]");
 	}
 
-	@Override
-	public String toString() {
-		return names.toString();
-	}
-
 }
 
 public class Deck2 {
 	public static void main(String[] args) {
 		Card2 card = new Card2();
-		System.out.println(card);
 	}
 }

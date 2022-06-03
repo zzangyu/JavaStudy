@@ -83,8 +83,8 @@ public class CalaExam {
 				System.out.println("0으로 나눌 수 없어잇!");
 				flag = 1;
 			}
-			System.out.println("total: " + tot);
-		}
+			System.out.println(su1 + " " + yon + " " + su2 + " = " + tot);
+		} // end while
 
 	}
 

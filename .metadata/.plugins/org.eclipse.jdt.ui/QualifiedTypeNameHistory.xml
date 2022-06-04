@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.ex.AbstractBicycle"/>
-    <fullyQualifiedTypeName name="com.ex2.Diagram"/>
-    <fullyQualifiedTypeName name="com.ex2.Circle"/>
-    <fullyQualifiedTypeName name="com.ex2.Rectengle"/>
-    <fullyQualifiedTypeName name="com.ex2.Triangle"/>
-    <fullyQualifiedTypeName name="com.absex.AbsExam"/>
-    <fullyQualifiedTypeName name="java.lang.ProcessBuilder"/>
-    <fullyQualifiedTypeName name="com.starcraft.Unit"/>
-    <fullyQualifiedTypeName name="com.starcraft.Dropship"/>
     <fullyQualifiedTypeName name="com.starcraft.SiegeTank"/>
     <fullyQualifiedTypeName name="com.inter.InterfaceEx"/>
     <fullyQualifiedTypeName name="com.inter.ex.Inter3"/>
@@ -34,7 +25,6 @@
     <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.time.Month"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.logging.Logger"/>
     <fullyQualifiedTypeName name="com.member.MemberMain"/>
     <fullyQualifiedTypeName name="com.study.Class_Test001"/>
@@ -47,7 +37,6 @@
     <fullyQualifiedTypeName name="java.lang.ClassNotFoundException"/>
     <fullyQualifiedTypeName name="java.lang.StackOverflowError"/>
     <fullyQualifiedTypeName name="java.sql.SQLException"/>
-    <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
     <fullyQualifiedTypeName name="com.excp2.MemoryException"/>
     <fullyQualifiedTypeName name="com.excp2.SpaceException"/>
     <fullyQualifiedTypeName name="javax.annotation.PostConstruct"/>
@@ -58,6 +47,17 @@
     <fullyQualifiedTypeName name="java.lang.Throwable"/>
     <fullyQualifiedTypeName name="java.io.PrintStream"/>
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
-    <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
     <fullyQualifiedTypeName name="com.excp3.MyException"/>
+    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+    <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
+    <fullyQualifiedTypeName name="com.study.Box"/>
+    <fullyQualifiedTypeName name="java.util.Stack"/>
+    <fullyQualifiedTypeName name="java.util.Queue"/>
+    <fullyQualifiedTypeName name="java.util.LinkedList"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="java.util.ListIterator"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>

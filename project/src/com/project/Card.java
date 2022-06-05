@@ -1,4 +1,4 @@
-package 과제;
+package com.project;
 
 public class Card {
 	String[] names = { "'클럽 ", "'다이아몬드 ", "'하트 ", "'스페이드 " };

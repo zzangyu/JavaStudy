@@ -1,4 +1,4 @@
-package °úÁ¦;
+package com.project;
 
 public class CardRunner {
 

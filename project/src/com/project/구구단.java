@@ -1,4 +1,4 @@
-package 과제;
+package com.project;
 
 import java.util.Scanner;
 public class 구구단 {

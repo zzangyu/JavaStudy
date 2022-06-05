@@ -1,4 +1,4 @@
-package 과제;
+package com.project;
 
 /*
 [문제]

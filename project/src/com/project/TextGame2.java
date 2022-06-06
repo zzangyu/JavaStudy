@@ -27,8 +27,7 @@ class Map {
 
 				System.out.print(map[i][j]);
 			}
-			System.out.print("\t  #");
-			System.out.println();
+			System.out.println("\t  #");
 
 		}
 		System.out.println("###################");
@@ -60,8 +59,8 @@ public class TextGame2 extends Map {
 		x = sc.nextInt();
 		y = sc.nextInt();
 		while (true) {
-			map.printMap(x, y);
 			map.Move();
+			map.printMap(x, y);
 			if (x == a && y == b) {
 				System.out.println("Game over ^.^"); // 사람 좌표와 몬스터 좌표가 같으면 게임 패배
 				break;

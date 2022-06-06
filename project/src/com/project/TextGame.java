@@ -12,10 +12,9 @@ public class TextGame {
 		int x = sc.nextInt();
 		int y = sc.nextInt();
 		while (true) {
-			System.out.println("###################");
 			int a = (int) (Math.random() * 8) + 1;
 			int b = (int) (Math.random() * 17) + 1;
-
+			System.out.println("###################");
 			for (int i = 0; i < map.length; i++) {
 				map[i] = new String[19];
 				for (int j = 0; j < map[i].length; j++) {
@@ -37,6 +36,13 @@ public class TextGame {
 
 			}
 			System.out.println("###################");
+			if (x == a && y == b) {
+				System.out.println("Game over ^.^"); // 사람 좌표와 몬스터 좌표가 같으면 게임 패배
+				break;
+			} else if (x == 3 && y == 4) { // 사람 좌표와 골드 좌표가 같으면 게임 승리
+				System.out.println("win !");
+				break;
+			}
 			System.out.print("위(J) 아래(K) 왼쪽(H) 오른쪽(I) : ");
 			String c = sc.next(); // 좌표 이동
 			if (c.equals("J")) {
@@ -47,13 +53,6 @@ public class TextGame {
 				--y;
 			} else if (c.equals("I")) {
 				++y;
-			}
-			if (x == a && y == b) {
-				System.out.println("Game over ^.^"); // 사람 좌표와 몬스터 좌표가 같으면 게임 패배
-				break;
-			} else if (x == 3 && y == 4) { // 사람 좌표와 골드 좌표가 같으면 게임 승리
-				System.out.println("win !");
-				break;
 			}
 		}
 	}

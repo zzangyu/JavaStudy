@@ -1,4 +1,4 @@
-package com.project;
+package com.project2;
 
 import java.util.Scanner;
 public class ±¸±¸´Ü {

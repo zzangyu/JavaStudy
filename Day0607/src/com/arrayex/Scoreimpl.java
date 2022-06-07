@@ -74,12 +74,25 @@ public class Scoreimpl implements Score {
 
 	@Override
 	public void searchName() {
-
+		System.out.println("이름을 입력해주세요.");
+		for (ScoreVO vo : list) {
+			if (vo.getName().equals(sc.next())) {
+				System.out.println(vo);
+			} else {
+				System.out.println("없다능");
+			}
+		}
 	}
 
 	@Override
 	public void searchHak() {
-
+		System.out.println("학번을 입력해주세요.");
+		for (ScoreVO temp : list) {
+			if (temp.getHak().equals(sc.next())) {
+				System.out.println(temp);
+			} else {
+				System.out.println("없다능");
+			}
+		}
 	}
-
 }

@@ -53,12 +53,37 @@ public class Scoreimpl implements Score {
 
 	@Override
 	public void update() {
+		System.out.print("수정할 학번 입력: ");
+		ScoreVO vo = readScore(sc.next());
+		if (vo == null) {
+			System.out.println("등록된 자료가 없습니다.");
+			return;
+		}
+		System.out.print("이름 입력: ");
+		vo.setName(sc.next());
+		System.out.print("생년월일 입력: ");
+		vo.setBirth(sc.next());
+		System.out.print("국어 점수 입력: ");
+		vo.setKor(sc.nextInt());
+		System.out.print("영어 점수 입력: ");
+		vo.setEng(sc.nextInt());
+		System.out.print("수학 점수 입력: ");
+		vo.setMat(sc.nextInt());
 
+		System.out.println("★★★★★★수정 완료★★★★★★");
 	}
 
 	@Override
 	public void delete() {
-
+		System.out.println("\n자료삭제");
+		System.out.println("삭제할 학번 입력: ");
+		ScoreVO vo = readScore(sc.next());
+		if (vo == null) {
+			System.out.println("등록된 자료가 없습니다.");
+			return;
+		}
+		list.remove(vo);
+		System.out.println("★★★★★★삭제 완료★★★★★★");
 	}
 
 	@Override
@@ -74,25 +99,39 @@ public class Scoreimpl implements Score {
 
 	@Override
 	public void searchName() {
-		System.out.println("이름을 입력해주세요.");
-		for (ScoreVO vo : list) {
-			if (vo.getName().equals(sc.next())) {
-				System.out.println(vo);
+		System.out.println("\n이름으로 검색");
+		System.out.println("검색할 이름 입력: ");
+		String name;
+		name = sc.next();
+		for (ScoreVO scoreVO : list) {
+			if (scoreVO.getName().startsWith(name)) {
+				System.out.println(scoreVO);
 			} else {
-				System.out.println("없다능");
+				System.out.println("등록된 자료가 없습니다.");
 			}
 		}
+
 	}
 
 	@Override
 	public void searchHak() {
-		System.out.println("학번을 입력해주세요.");
-		for (ScoreVO temp : list) {
-			if (temp.getHak().equals(sc.next())) {
-				System.out.println(temp);
-			} else {
-				System.out.println("없다능");
-			}
+		System.out.println("\n학번으로 검색");
+		System.out.println("검색할 학번 입력: ");
+		String hak;
+		hak = sc.next();
+		ScoreVO vo = readScore(hak);
+		if (vo != null) {
+			System.out.println(vo);
+//			System.out.println(vo.getHak() + "\t");
+//			System.out.println(vo.getName() + "\t");
+//			System.out.println(vo.getBirth() + "\t");
+//			System.out.println(vo.getKor() + "\t");
+//			System.out.println(vo.getEng() + "\t");
+//			System.out.println(vo.getMat() + "\t");
+//			System.out.println(vo.getTot() + "\t");
+//			System.out.println(vo.getTot() / 3);
+		} else {
+			System.out.println("등록된 자료가 없습니다.");
 		}
 	}
 }

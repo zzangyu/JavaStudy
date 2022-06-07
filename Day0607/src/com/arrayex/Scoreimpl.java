@@ -106,10 +106,11 @@ public class Scoreimpl implements Score {
 		for (ScoreVO scoreVO : list) {
 			if (scoreVO.getName().startsWith(name)) {
 				System.out.println(scoreVO);
-			} else {
-				System.out.println("등록된 자료가 없습니다.");
+				return;
 			}
+
 		}
+		System.out.println("등록된 자료가 없습니다.");
 
 	}
 
@@ -130,6 +131,8 @@ public class Scoreimpl implements Score {
 //			System.out.println(vo.getMat() + "\t");
 //			System.out.println(vo.getTot() + "\t");
 //			System.out.println(vo.getTot() / 3);
+			return;
 		}
+		System.out.println("등록된 자료가 없습니다.");
 	}
 }

@@ -1,25 +1,27 @@
 package com.javalec.ex;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebInitParam;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class PostMethod
+ * Servlet implementation class InitParam
  */
-@WebServlet("/PostMethod")
-public class PostMethod extends HttpServlet {
+
+@WebServlet(urlPatterns = { "/InitP" }, initParams = { @WebInitParam(name = "id", value = "aaaa"),
+		@WebInitParam(name = "pw", value = "9999") })
+public class InitParam extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	/**
 	 * @see HttpServlet#HttpServlet()
 	 */
-	public PostMethod() {
+	public InitParam() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -31,7 +33,17 @@ public class PostMethod extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		System.out.println("doGet");
+		// 특정한 servlet에서 사용할 때!
+//		String id = getInitParameter("id"); // 반환값은 스트링!
+//		String pw = getInitParameter("pw");
+//		System.out.println("id = " + id);
+//		System.out.println("pw = " + pw);
+
+		// 여러 servlet에서 사용할 때
+		String id = getServletContext().getInitParameter("id");
+		String pw = getServletContext().getInitParameter("pw");
+		System.out.println("id = " + id);
+		System.out.println("pw = " + pw);
 	}
 
 	/**
@@ -41,19 +53,8 @@ public class PostMethod extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		System.out.println("doPost");
-
-		request.setCharacterEncoding("EUC-KR");
-		response.setContentType("text/html; charset=euc-kr");
-		PrintWriter writer = response.getWriter();
-		writer.println("<html>");
-		writer.println("<head>");
-		writer.println("</head>");
-		writer.println("<body>");
-		writer.println("<h1>POST 방식입니다. 따라서 doPost 메소드가 호출 되었습니다.</h1>");
-		writer.println("</body>");
-		writer.println("</html>");
-
+		// TODO Auto-generated method stub
+		doGet(request, response);
 	}
 
 }

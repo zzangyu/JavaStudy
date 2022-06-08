@@ -20,20 +20,26 @@
 		<param-name>pw</param-name>
 		<param-value>12345</param-value>
 	</init-param>
-	
 </servlet>  
 <servlet-mapping>
 	<servlet-name>InitParam</servlet-name>
 	<url-pattern>/IP</url-pattern>
 </servlet-mapping> -->
 
-<context-param>
+<!--여러 servlet에서 사용-->
+<!-- <context-param>
 	<param-name>id</param-name>
 	<param-value>abc</param-value>
 </context-param>
 <context-param>
 	<param-name>pw</param-name>
 	<param-value>123</param-value>
-</context-param>
+</context-param> -->
+
+<!-- listener 사용하려면 이렇게 하거나 Listener class에가서 @WebListener를 쓰면 된다. 
+<listener>
+	<listener-class>com.javalec.ex.ServletListener</listener-class>
+</listener>
+ -->
 
 </web-app>

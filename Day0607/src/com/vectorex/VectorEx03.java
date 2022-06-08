@@ -1,5 +1,6 @@
 package com.vectorex;
 
+import java.util.Collections;
 import java.util.Vector;
 
 public class VectorEx03 {
@@ -32,8 +33,44 @@ public class VectorEx03 {
 		for (String str : v)
 			System.out.print(str + "  ");
 		System.out.println();
-
 		// 오름차순 정렬
+		Collections.sort(v);
+
+		// 오름차순 후
+		System.out.println("********************");
+		System.out.println("오름차순 정렬\n" + v);
+
+		// 검색은 오름차순 정렬된 자료에서만 가능하다.
+		int idx1 = Collections.binarySearch(v, "연두색");
+		System.out.println("연두색: " + idx1 + " index에 있음"); // 있으면 index 출력
+		int idx2 = Collections.binarySearch(v, "초초");
+		System.out.println("초초: " + idx2); // 없으면 음수 출력
+
+		// 내림차순 정렬
+		Collections.sort(v, Collections.reverseOrder());
+		System.out.println("********************");
+		System.out.println("내림차순 정렬\n" + v);
+
+		// 내림차순 검색
+		idx1 = Collections.binarySearch(v, "연두색", Collections.reverseOrder());
+		System.out.println("연두색: " + idx1 + " index에 있음"); // 또는
+		int idx4 = Collections.binarySearch(v, "초초");
+		System.out.println("초초: " + idx4);
+
+		// 위와 다른 방법으로 검색(정렬 안하고!)
+		System.out.println("********************");
+		String s = "노란색";
+		if (v.contains(s)) {
+			int i = v.indexOf(s) + 1; // index+1 한것
+			System.out.println(s + "--> 위치: " + i);
+		}
+
+		// 삭제
+		System.out.println("********************");
+		v.remove(3);
+		System.out.println("연두색을 지운 뒤\n" + v);
+		v.remove("주황색");
+		System.out.println("주황색을 지운 뒤\n" + v);
 
 	}
 

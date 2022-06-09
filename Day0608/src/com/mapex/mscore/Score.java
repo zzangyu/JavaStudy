@@ -9,7 +9,7 @@ public interface Score {
 
 	public int Update() throws IOException;
 
-	public int Search() throws IOException;
+	public void Search() throws IOException;
 
 	public int Delete() throws IOException;
 

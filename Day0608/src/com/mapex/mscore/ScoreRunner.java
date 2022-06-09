@@ -8,7 +8,7 @@ public class ScoreRunner {
 
 		Score score = new ScoreImpl();
 		char ch;
-		System.out.println("≮≮≮≮≮ 己利贸府 ≮≮≮≮≮");
+		System.out.println("≮≮≮≮≮≮≮≮≮≮≮≮≮≮≮ 己利贸府 ≮≮≮≮≮≮≮≮≮≮≮≮≮≮≮");
 		while (true) {
 			do {
 				System.out.println("\n(1)涝仿 (2)荐沥 (3)捞抚 八祸 (4)昏力 ");

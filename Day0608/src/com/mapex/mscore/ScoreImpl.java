@@ -3,10 +3,32 @@ package com.mapex.mscore;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
+
+class MyComparator<T> implements Comparator<T> {
+	@Override
+	public int compare(T o1, T o2) {
+		ScoreVO s1 = (ScoreVO) o1;
+		ScoreVO s2 = (ScoreVO) o2;
+		int n = s1.getTot() - s2.getTot();
+
+		if (n > 1) {
+			return 1; // 오름차순
+		} else if (n < 1) {
+			return -1; // 내림차순
+		} else {
+			return 0; // 같다
+		}
+
+	}
+}
 
 public class ScoreImpl implements Score {
 	private Map<String, ScoreVO> map;
@@ -71,15 +93,45 @@ public class ScoreImpl implements Score {
 	}
 
 	@Override
-	public int Search() throws IOException {
+	public void Search() throws IOException {
+//		String name;
+//		System.out.print("검색할 이름 입력: ");
+//		name = br.readLine();
+//
+//		Set<String> set = map.keySet();
+//		Iterator<String> it = set.iterator();
+//		while (it.hasNext()) {
+//			String key = it.next();
+//			ScoreVO data = map.get(key);
+//			if (data.getName().equals(name)) {
+//				System.out.println(data.toString());
+//			}
+//		}
+//		System.out.println();
 
-		return 0;
+		String hak;
+		System.out.print("검색할 학번 입력: ");
+		hak = br.readLine();
+
+		if (map.containsKey(hak)) {
+			System.out.println(map.get(hak).toString());
+		}
+
 	}
 
 	@Override
 	public int Delete() throws IOException {
+		String hak;
+		System.out.print("삭제할 학번 입력: ");
+		hak = br.readLine();
 
-		return 0;
+		if (!map.containsKey(hak)) {
+			System.out.println(hak + "이라는 학번이 존재하지 않습니다.");
+			return 0;
+		}
+		map.remove(hak);
+		System.out.println(hak + "이 삭제되었습니다.");
+		return 1;
 	}
 
 	@Override
@@ -96,6 +148,30 @@ public class ScoreImpl implements Score {
 
 	@Override
 	public void WriteSort() {
+		List<ScoreVO> lists = new ArrayList<>();
+		Set<String> set = map.keySet();
+		Iterator<String> it1 = set.iterator();
+		while (it1.hasNext()) {
+			String key = it1.next();
+			lists.add(map.get(key));
+		}
+
+		// 내림차순 정렬
+		Collections.sort(lists, Collections.reverseOrder(new MyComparator<ScoreVO>()));
+		System.out.println("★★★★★총점순으로 정렬★★★★★");
+		Iterator<ScoreVO> it2 = lists.iterator();
+		while (it2.hasNext()) {
+			ScoreVO data = it2.next();
+			System.out.println(data.toString());
+		}
+		// 오름차순 정렬
+		Collections.sort(lists, new MyComparator<ScoreVO>());
+		System.out.println("★★★★★총점 역순으로 정렬★★★★★");
+		Iterator<ScoreVO> it3 = lists.iterator();
+		while (it3.hasNext()) {
+			ScoreVO data = it3.next();
+			System.out.println(data.toString());
+		}
 
 	}
 

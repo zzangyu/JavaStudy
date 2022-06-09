@@ -51,8 +51,8 @@ public class ScoreVO {
 
 	@Override
 	public String toString() {
-		String str = String.format("학번:%7s 이름:%3s 국어점수:%3d점 영어점수:%3d점 수학점수:%3d점 총점:%3d점 평균:%5.1f점", hak, name, kor, eng,
-				mat, getTot(), (float) getTot() / 3);
+		String str = String.format("학번:%7s 이름:%3s \n국어점수:%3d점 영어점수:%3d점 수학점수:%3d점 \n총점:%3d점 평균:%5.1f점", hak, name, kor,
+				eng, mat, getTot(), (float) getTot() / 3);
 		return str;
 	}
 

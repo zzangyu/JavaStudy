@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.inter.InterfaceEx"/>
-    <fullyQualifiedTypeName name="com.inter.ex.Inter3"/>
-    <fullyQualifiedTypeName name="com.ex99.Flute"/>
-    <fullyQualifiedTypeName name="java.lang.Record"/>
-    <fullyQualifiedTypeName name="com.inner.OuterEx.InnerEx"/>
     <fullyQualifiedTypeName name="com.inner.MemberInner"/>
     <fullyQualifiedTypeName name="com.inner.MemberInner.Inner"/>
     <fullyQualifiedTypeName name="concurrency.CopyOnWriteArrayListRunner"/>
@@ -20,7 +15,6 @@
     <fullyQualifiedTypeName name="review.Client"/>
     <fullyQualifiedTypeName name="review_package1.ExampleClass"/>
     <fullyQualifiedTypeName name="review.NestedClassRunner.InnerClass"/>
-    <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.time.Month"/>
     <fullyQualifiedTypeName name="java.util.logging.Logger"/>
@@ -38,7 +32,6 @@
     <fullyQualifiedTypeName name="com.excp2.SpaceException"/>
     <fullyQualifiedTypeName name="javax.annotation.PostConstruct"/>
     <fullyQualifiedTypeName name="javax.annotation.PreDestroy"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="com.excp2.InstallException"/>
     <fullyQualifiedTypeName name="java.lang.Throwable"/>
     <fullyQualifiedTypeName name="java.io.PrintStream"/>
@@ -55,9 +48,16 @@
     <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.util.ListIterator"/>
+    <fullyQualifiedTypeName name="com.vectorex.VectorEx02"/>
+    <fullyQualifiedTypeName name="java.util.Collection"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="java.util.Vector"/>
+    <fullyQualifiedTypeName name="com.sun.tools.javac.launcher.Main"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.boardex.BoardVO"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
     <fullyQualifiedTypeName name="java.util.Iterator"/>
     <fullyQualifiedTypeName name="java.net.Socket"/>
 </qualifiedTypeNameHistroy>

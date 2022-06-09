@@ -30,7 +30,7 @@ public class HashMapEx {
 		}
 
 		map.put("영화", "달마야놀자");
-		System.out.println(map); // 바뀜,,
+		System.out.println(map); // key값은 변경 안되고 value만 바뀜,,
 
 	}
 

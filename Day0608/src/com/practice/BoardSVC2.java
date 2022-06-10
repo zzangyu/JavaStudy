@@ -53,16 +53,27 @@ public class BoardSVC2 {
 	}
 
 	public void deleteArticle(Scanner sc) {
-		System.out.println("게시글을 제거할 때는 글의 작성자와 비밀번호를 입력하세요.");
-		System.out.print("작성자: ");
-		String register = sc.next();
-		System.out.print("비밀번호: ");
-		String pw = sc.next();
-
-		deleteArticle(register, pw);
+		int limit = 0;
+		while (limit < 3) {
+			if (limit > 0) {
+				System.out.println(3 - limit + "번 남았습니다.");
+			}
+			System.out.println("\n게시글을 제거할 때는 글의 작성자와 비밀번호를 입력하세요.");
+			System.out.print("작성자: ");
+			String register = sc.next();
+			System.out.print("비밀번호: ");
+			String pw = sc.next();
+			deleteArticle(register, pw);
+			if (limit == 2) {
+				System.out.print("아이디 또는 비밀번호가 맞지 않아 종료합니다. ");
+				System.exit(0);
+			}
+			limit++;
+		}
 	}
 
 	private void deleteArticle(String register, String pw) {
+		int limit = 0;
 		if (boardList.size() > 0) {
 			int index = -1;
 
@@ -77,12 +88,13 @@ public class BoardSVC2 {
 			}
 			if (index == -1) { // 내가 찾는 글이 없을 때, 이름&비밀번호가 맞지 않을 때
 				System.out.println("해당 글의 작성자&비밀번호의 정보와 일치하지 않습니다.");
-				return;
 			}
 
 		} else {
 			System.out.println("등록된 게시글이 없습니다.");
+			return;
 		}
+
 	}
 
 	public void searchArticle(Scanner sc) {

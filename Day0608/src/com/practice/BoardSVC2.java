@@ -1,15 +1,15 @@
 package com.practice;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
 public class BoardSVC2 {
-	HashMap<String, String> board;
-	HashMap<String, BoardVO2> board_;
+
+	ArrayList<HashMap<String, String>> boardList;
 
 	public BoardSVC2() {
-		board = new HashMap<String, String>();
-		board_ = new HashMap<String, BoardVO2>();
+		boardList = new ArrayList<HashMap<String, String>>();
 	}
 
 	public void writeArticle(Scanner sc) {
@@ -24,18 +24,28 @@ public class BoardSVC2 {
 		String subject = sc.next();
 		System.out.print("글 내용: ");
 		String content = sc.next();
-		BoardVO2 boardVO2 = new BoardVO2(register, subject, email, content, pw);
-		addArticle(pw, boardVO2);
+		HashMap<String, String> boardMap = new HashMap<String, String>();
+		boardMap.put("register", register);
+		boardMap.put("email", email);
+		boardMap.put("pw", pw);
+		boardMap.put("subject", subject);
+		boardMap.put("content", content);
+
+		addArticle(boardMap);
 	}
 
-	private void addArticle(String pw, BoardVO2 boardVO2) {
-		board_.put(pw, boardVO2);
+	private void addArticle(HashMap<String, String> boardMap) {
+		boardList.add(boardMap);
 	}
 
 	public void listArticle(Scanner sc) {
-		if (board_.size() > 0) {
-			for (int i = 0; i < board_.size(); i++) {
-				System.out.println(board_.get(i));
+		if (boardList.size() > 0) {
+			for (int i = 0; i < boardList.size(); i++) {
+				System.out.println("작성자:" + boardList.get(i).get("register"));
+				System.out.println("이메일:" + boardList.get(i).get("email"));
+				System.out.println("비밀번호:" + boardList.get(i).get("pw"));
+				System.out.println("제목:" + boardList.get(i).get("subject"));
+				System.out.println("글 내용" + boardList.get(i).get("content") + "\n");
 			}
 		} else {
 			System.out.println("등록된 게시글이 없습니다.");
@@ -53,13 +63,13 @@ public class BoardSVC2 {
 	}
 
 	private void deleteArticle(String register, String pw) {
-		if (board_.size() > 0) {
+		if (boardList.size() > 0) {
 			int index = -1;
 
-			for (int i = 0; i < board_.size(); i++) {
-				if (board_.get(i).getRegister().equals(register)) {
-					if (board_.get(i).getPw().equals(pw)) {
-						board_.remove(board_.get(i));
+			for (int i = 0; i < boardList.size(); i++) {
+				if (boardList.get(i).get("register").equals(register)) {
+					if (boardList.get(i).get("pw").equals(pw)) {
+						boardList.remove(boardList.get(i));
 						index = 1;
 						System.out.println(register + "님의 게시글이 삭제되었습니다.");
 					}
@@ -78,10 +88,14 @@ public class BoardSVC2 {
 	public void searchArticle(Scanner sc) {
 		System.out.print("이름을 입력해주세요.");
 		String name = sc.next();
-		if (board_.size() > 0) {
-			for (int i = 0; i < board_.size(); i++) {
-				if (board_.get(i).getRegister().equals(name)) {
-					System.out.println(board_.get(i));
+		if (boardList.size() > 0) {
+			for (int i = 0; i < boardList.size(); i++) {
+				if (boardList.get(i).get("register").equals(name)) {
+					System.out.println("작성자:" + boardList.get(i).get("register"));
+					System.out.println("이메일:" + boardList.get(i).get("email"));
+					System.out.println("비밀번호:" + boardList.get(i).get("pw"));
+					System.out.println("제목:" + boardList.get(i).get("subject"));
+					System.out.println("글 내용" + boardList.get(i).get("content") + "\n");
 				}
 			}
 		} else {
@@ -96,10 +110,11 @@ public class BoardSVC2 {
 		System.out.print("비밀번호: ");
 		String pw = sc.next();
 
-		if (board_.size() > 0) {
-			for (int i = 0; i < board_.size(); i++) {
-				if (board_.get(i).getRegister().equals(register)) {
-					if (board_.get(i).getPw().equals(pw)) {
+		if (boardList.size() > 0) {
+			for (int i = 0; i < boardList.size(); i++) {
+				if (boardList.get(i).get("register").equals(register)) {
+					if (boardList.get(i).get("pw").equals(pw)) {
+						boardList.remove(i);
 						writeArticle(sc);
 					}
 				}

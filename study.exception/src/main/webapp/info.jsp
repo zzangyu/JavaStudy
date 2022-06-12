@@ -14,7 +14,7 @@
 		int[] arr = {1,2};
 	
 		for(int j = 0; j < 5; j++){
-			arr[j] = 1;
+			arr[j] = 10;
 		}
 
 	%>

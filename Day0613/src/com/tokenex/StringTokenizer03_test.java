@@ -14,6 +14,7 @@ public class StringTokenizer03_test {
 			String stst = st.nextToken();
 			System.out.println(stst);
 		}
+
 	}
 
 }

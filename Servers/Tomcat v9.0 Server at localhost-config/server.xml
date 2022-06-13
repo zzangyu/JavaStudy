@@ -152,7 +152,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="helloworld" path="/helloworld" reloadable="true" source="org.eclipse.jst.jee.server:helloworld"/><Context docBase="Post" path="/Post" reloadable="true" source="org.eclipse.jst.jee.server:Post"/><Context docBase="study.ex2" path="/study.ex2" reloadable="true" source="org.eclipse.jst.jee.server:study.ex2"/><Context docBase="study.cookieEx" path="/study.cookieEx" reloadable="true" source="org.eclipse.jst.jee.server:study.cookieEx"/><Context docBase="study.exception" path="/study.exception" reloadable="true" source="org.eclipse.jst.jee.server:study.exception"/></Host>
+      <Context docBase="helloworld" path="/helloworld" reloadable="true" source="org.eclipse.jst.jee.server:helloworld"/><Context docBase="Post" path="/Post" reloadable="true" source="org.eclipse.jst.jee.server:Post"/><Context docBase="jsp_study_cookieEx" path="/jsp_study_cookieEx" reloadable="true" source="org.eclipse.jst.jee.server:jsp_study_cookieEx"/><Context docBase="jsp_study_ex2" path="/jsp_study_ex2" reloadable="true" source="org.eclipse.jst.jee.server:jsp_study_ex2"/><Context docBase="jsp_study_exception" path="/jsp_study_exception" reloadable="true" source="org.eclipse.jst.jee.server:jsp_study_exception"/><Context docBase="jsp_study_beanex" path="/jsp_study_beanex" reloadable="true" source="org.eclipse.jst.jee.server:jsp_study_beanex"/></Host>
     </Engine>
   </Service>
 </Server>

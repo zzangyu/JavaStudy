@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,6 +8,8 @@
 <title>Insert title here</title>
 </head>
 <body>
+
+<a href="error03.jsp">error03.jsp</a>
 
 </body>
 </html>

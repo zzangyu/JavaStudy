@@ -53,6 +53,24 @@ public class CalendarEx01 {
 
 		System.out.println(y + "년 " + m + "월 " + d + "일 " + week);
 
+		// 현재 날짜에 1000을 더하면 ?
+		calendar.add(Calendar.DATE, 1000);
+		System.out.printf("%tF%n", calendar);
+
+		// 2023.06.15
+		calendar.set(2023, 6 - 1, 15);
+		System.out.printf("%tF%n", calendar);
+
+		calendar.set(Calendar.DATE, 20);
+		System.out.printf("%tF%n", calendar);
+
+		// 2022 6 32
+		calendar.set(2022, 6 - 1, 30); // 0부터 시작이라 6은 7월임!
+		System.out.printf("%tF%n", calendar);
+
+		int max = calendar.getActualMaximum(Calendar.DATE); // 그 달의 마지막 날짜
+		System.out.println(Calendar.DATE + 1 + "월의 마지막 날은 " + max + "일");
+
 	}
 
 }

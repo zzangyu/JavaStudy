@@ -28,8 +28,8 @@ public class FileInputStreamEx01 {
 			ie.printStackTrace();
 		} finally {
 			try {
-				if(fis != null) // 내용이 있으면 닫아.
-				fis.close(); 
+				if (fis != null) // 내용이 있으면 닫아.
+					fis.close();
 			} catch (IOException ii) {
 				ii.printStackTrace();
 			}

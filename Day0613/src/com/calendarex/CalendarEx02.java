@@ -21,9 +21,9 @@ public class CalendarEx02 {
 		cal.set(year, month - 1, 1);
 
 		int week = cal.get(Calendar.DAY_OF_WEEK);
-		System.out.println("\t" + year + "년 " + month + "월");
-		System.out.println("   일     월      화      수     목      금      토");
-		System.out.println("=======================");
+		System.out.println("\t\t    " + year + "년 " + month + "월");
+		System.out.println("   일     월      화      수     목      금      토  ");
+		System.out.println("========================");
 
 		for (i = 1; i < week; i++)
 			System.out.print("\t");

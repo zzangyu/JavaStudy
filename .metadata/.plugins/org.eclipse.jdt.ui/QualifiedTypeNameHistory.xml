@@ -45,7 +45,6 @@
     <fullyQualifiedTypeName name="java.util.Hashtable"/>
     <fullyQualifiedTypeName name="com.practice.BoardVO"/>
     <fullyQualifiedTypeName name="com.practice.BoardSVC"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.util.TreeMap"/>
     <fullyQualifiedTypeName name="com.treemapex.SungRec"/>
     <fullyQualifiedTypeName name="java.util.Set"/>
@@ -59,5 +58,6 @@
     <fullyQualifiedTypeName name="com.tokenex.StringTokenizerEx02"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="sun.security.jca.GetInstance"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.util.Calendar"/>
 </qualifiedTypeNameHistroy>

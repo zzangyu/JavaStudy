@@ -16,7 +16,7 @@ public class FileReaderEx {
 
 			int readValue = 0;
 
-			while ((readValue = fr.read()) != -1) {
+			while ((readValue = fr.read()) != -1) { // 유니코드 -> 정수형으로 읽어오기 -> char로 강제형변환해서 출력
 				System.out.print((char) readValue);
 			}
 

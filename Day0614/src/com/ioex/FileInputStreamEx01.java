@@ -14,7 +14,7 @@ public class FileInputStreamEx01 {
 
 		try {
 			System.out.print("파일명 : ");
-			System.in.read(_console);
+			System.in.read(_console); // 파일을 그대로 읽어온다 ?
 
 			String file = new String(_console).trim(); // trim: 양쪽 공백을 제거한다.
 

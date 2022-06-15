@@ -14,6 +14,14 @@ public class BufferedWriterEx {
 		BufferedWriter bw = null;
 
 		try {
+			fw = new FileWriter("c:/ppp/hello.txt");
+			bw = new BufferedWriter(fw);
+			bw.write("오늘 날씨 흐리다능,, @");
+			bw.newLine(); // 라인을 바꿔줍니다!
+			bw.write("그쵸? 흐리다능! 그렇다능!");
+			bw.newLine(); // 라인을 바꿔줍니다!
+			bw.write("맞다능!");
+			bw.flush();
 
 		} catch (IOException ie) {
 			ie.printStackTrace();

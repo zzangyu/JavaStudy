@@ -15,6 +15,7 @@ class Thread_ extends Thread {
 
 	@Override
 	public void run() {
+		System.out.println("start");
 		System.out.println(Thread.activeCount()); // 살아있는 thread 몇개 ?
 		int xx = Thread.activeCount();
 		Thread[] th = new Thread[xx];
@@ -52,10 +53,12 @@ public class Thread_Prioity {
 		Thread_ t2 = new Thread_("사토미", "이시하라", 6);
 		t2.start();
 		try {
-			Thread.sleep(300);
+			Thread.sleep(300); // main의 종료 시간을 늦추기 위해
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
+
+		System.out.println("main end");
 
 	}
 

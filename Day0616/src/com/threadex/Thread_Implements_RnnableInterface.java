@@ -2,11 +2,11 @@ package com.threadex;
 
 // runnable interface 활용
 
-public class ThreadEx02 implements Runnable {
+public class Thread_Implements_RnnableInterface implements Runnable {
 
 	private int[] temp;
 
-	public ThreadEx02() {
+	public Thread_Implements_RnnableInterface() {
 		temp = new int[10];
 		for (int start = 0; start < temp.length; start++) {
 			temp[start] = start;
@@ -28,7 +28,7 @@ public class ThreadEx02 implements Runnable {
 	}
 
 	public static void main(String[] args) {
-		ThreadEx02 te2 = new ThreadEx02();
+		Thread_Implements_RnnableInterface te2 = new Thread_Implements_RnnableInterface();
 		Thread t = new Thread(te2, "꾸꾸	"); // 타겟 thread, thread 이름
 		t.start();
 	}

@@ -1,11 +1,11 @@
 package com.threadex;
 
 // thread 클래스 상속
-public class ThreadEx01 extends Thread {
+public class Thread_extends_ThreadClass extends Thread {
 
 	private int[] temp;
 
-	public ThreadEx01(String threadname) {
+	public Thread_extends_ThreadClass(String threadname) {
 		super(threadname); // thread 생성자를 의미
 		temp = new int[10];
 		for (int start = 0; start < temp.length; start++) {
@@ -28,7 +28,7 @@ public class ThreadEx01 extends Thread {
 	}
 
 	public static void main(String[] args) {
-		ThreadEx01 te = new ThreadEx01("홍길동"); // 인자값 : 이름
+		Thread_extends_ThreadClass te = new Thread_extends_ThreadClass("홍길동"); // 인자값 : 이름
 		te.start(); // 자동으로 run을 호출한다.
 	}
 

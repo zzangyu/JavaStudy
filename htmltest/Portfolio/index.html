@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>포트폴리오</title>
+    
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/scroll.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+    
+    <div id="wrap">
+        <header class="header">
+            <button onclick="fnMove('1')" >HOME</button>
+            <button onclick="fnMove('2')" >ABOUT ME</button>
+            <button onclick="fnMove('3')" >SKILLS</button>
+            <button onclick="fnMove('4')" >PORTFOLIO</button>
+            <button onclick="fnMove('5')" >CONTACT</button>
+        </header>
+        <div id="div1" class="contents">
+            welcome
+        </div>
+        <div id="div2"  class="contents" style="background-color:white;">
+            About Me
+        </div>
+        <div id="div3"  class="contents" style="background-color:white;">
+            Skills
+        </div>
+        <div id="div4"  class="contents" style="background-color:white;">
+            Portfolio
+        </div>
+        <div id="div5"  class="contents" style="background-color:white;">
+            contact
+        </div>
+    </div>
+</body>
+
+<script>
+    // btn 클릭하면 스클롤 이동
+function fnMove(seq){
+    var offset = $("#div" + seq).size() ? $("#div" + seq).offset():0;
+    $('html, body').animate({scrollTop : offset.top}, 400);
+}
+
+// btn 클릭하면 class추가
+$(document).on("click", "button", function(e) {
+    e.preventDefault(); // 기본으로 정의된 이벤트를 작동하지 못하게 하는 메서드
+    // .siblings() 객체와 동일한 위치에 있는 모든 객체 (자신을 제외한 형제요소)를 검색하는 메소드
+    $(this).addClass("active").siblings().removeClass("active");
+
+    fnMove($(this).data("n"));
+});
+</script>
+
+<footer>
+
+</footer>
+</html>

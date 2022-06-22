@@ -12,25 +12,23 @@ html, body {
     left: 0;
     right: 0;
     width: 100%;
-    height: 100px;
+    height: 85px;
     align-items : center;
     justify-content: center;
-    background-color: #bde0fe84;
-   
+    background-color: rgba(255, 255, 255, 0);
     font-weight: bold;
     font-size: 22px;
 }
+
 .header button {
     font-size: 1em;
     margin: 0 5%;
-    background-color: #bde0fe00;
+    background-color: rgba(255, 255, 255, 0);
     color: black;
     border: none;
     border-radius: 10%;
     display: flex;
     justify-content: space-evenly;
-    
-    
 }
 
 #wrap {
@@ -42,20 +40,52 @@ html, body {
 }
 
 #wrap .contents {
-    display: flex;
     width:100%; 
     height:100%; 
     color:#000; 
     font-size:24pt;
-    align-items : center;
-    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    align-items: flex-start;
+    padding-bottom: 8%;
+    padding-left: 2%;
     -ms-overflow-style: none;
 }
+#wrap #div1 {
+
+}
+
+#wrap #div2 div:nth-of-type(1){
+    width: 30%;
+    height: 60%;
+    background-color: #bde0fe84;
+    padding: 20px 10px 0 180px;
+}
+#wrap #div2 div:nth-of-type(2){
+    width: 50%;
+    height: 50%;
+}
+
+#wrap #div3 {
+
+}
+#wrap #div4 {
+
+}
+#wrap #div5 {
+
+}
+
+#wrap #div2 img {
+    width: 80%;
+    height: 100%;
+}
+
 
 ::-webkit-scrollbar {
     display:none;
 } 
-
 
 #fst_content {
     margin-top: 100px;

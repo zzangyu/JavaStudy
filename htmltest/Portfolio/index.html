@@ -11,10 +11,12 @@
     <link rel="stylesheet" href="./css/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     <script src="./js/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="./js/Chart.min.js"></script>
-    <script src="./js/chart1.js"></script>
+    <script src="./js/hoda.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
 </head>
 <body>
     
@@ -29,18 +31,23 @@
         <div id="div1"  class="contents">
             HOME    
         </div>
-        <div id="div2"  class="contents" style="background-color:white;">
-            <div><img src="/image/다운로드.jpeg"></div>
-            <div> <p>苗字 名前 : 韓(ハン) 燦奎(チャンギュ)</p><p>소속: 2022/03/? ~ 2022/10/? GlobalIn</p></div>
+        <div id="div2"  class="contents">
+                <div><img src="/image/다운로드.jpeg"></div>
+                <div> <p>苗字: 韓(ハン)</p><p>名前: 燦奎(チャンギュ)</p><p>소속: 2022/03/? ~ 2022/10/? GlobalIn</p></div>
         </div>
-        <div id="div3"  class="contents" style="background-color:white;">
-            <canvas id="radar-chart1" width="300px" height="300px"></canvas>
-            <canvas id="radar-chart2" width="300px" height="300px"></canvas>
-            <canvas id="radar-chart3" width="300px" height="300px"></canvas>
+        <div id="div3"  class="contents">
+            <div class="wrap">
+                <div><h3>My Skill Set</h3></div>
+                <div id="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, cum neque! Quasi voluptatum dolores, commodi reiciendis cupiditate illum doloribus fugit iure repudiandae sed laudantium totam minus non labore odio aliquid!</div>
+            
+                <div id="skillSetDiv">
+                    <canvas id="programmingSkillSet"></canvas>
+                </div>
+            </div>
         </div>
-        <div id="div4"  class="contents" style="background-color:white;">
+        <div id="div4"  class="contents">
         </div>
-        <div id="div5"  class="contents" style="background-color:white;">
+        <div id="div5"  class="contents">
             CONTACT
         </div>
     </div>

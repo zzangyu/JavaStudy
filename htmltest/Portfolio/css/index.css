@@ -1,12 +1,11 @@
-html,
-body {
+html,body {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
   font-family: 'Noto Sans JP', sans-serif;
 }
-
+/* ーーーーーーーheader ボタンーーーーーーー */
 .header {
   display: flex;
   position: fixed;
@@ -21,7 +20,6 @@ body {
   font-weight: bold;
   font-size: 22px;
 }
-
 .header button {
   font-size: 1em;
   margin: 0 5%;
@@ -32,13 +30,12 @@ body {
   display: flex;
   justify-content: space-evenly;
 }
-
 .header button:hover {
   cursor: pointer;
   color: #2f78b984;
   transition: 0.5s;
 }
-
+/* ーーーーーーー全体的ーーーーーーー */
 #wrap {
   position: relative;
   height: 100%;
@@ -46,54 +43,95 @@ body {
   scroll-behavior: smooth;
   /* overflow-y: scroll; */
 }
-
 #wrap .contents {
   width: 100%;
-  height: 96%;
+  height: 100%;
   color: #000;
   font-size: 12pt;
-  display: flex;
-  align-items: flex-start;
-  /* padding-bottom: 8%;
-  padding-left: 2%; */
+  font-weight: bolder;
   -ms-overflow-style: none;
 }
+/* ーーーーーーーHOMEーーーーーーー */
+#wrap #div1 {
+  background-color: #bde0fe84;
+}
 
+/* ーーーーーーーABOUT MEーーーーーーー */
 #wrap #div2 {
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap-reverse;
 }
-
 #wrap #div2 div:nth-of-type(1) {
   width: 30%;
-  height: 75%;
-  background-color: #bde0fe84;
-  padding: 20px 10px 0 180px;
+  height: 65%;
+  background-color: #bde0fe39;
+  padding: 20px 10px 10px 180px;
+  margin-bottom: 20px;
 }
-
 #wrap #div2 div:nth-of-type(2) {
   width: 50%;
   height: 50%;
   align-items: flex-end;
   padding-bottom: 10%;
   padding-left: 1%;
-
 }
-
 #wrap #div2 img {
   width: 80%;
   height: 100%;
 }
-
-p {
-  display: block;
+#div2 p {
   height: 20%;
+  line-height: rem;
 }
 
+/* ーーーーーーーMY SKILL SETーーーーーーー */
+#wrap #div3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #bde0fe84;
+}
+#wrap #div3 .wrap{
+  text-align: center;
+  padding: 0 10%;
+}
+#wrap #div3 #info {
+  line-height: 2rem;
+  text-align: center;
+  margin: 3em 0 3rem 0;
+  
+}
+#wrap #div3 h3 {
+  text-align: center;
+  font-size: 2em;
+  margin: 1em 0 1em 0;
+  font-weight: bolder;
+}
+#skillSetDiv {
+  display: flex;
+  justify-content: center;
+}
+#programmingSkillSet {
+  width:350;
+  height:350;
+  height: 255px; 
+  width: 255px;
+  padding: 5%;
+  background-color: white;
+  border-radius: 4%;
+  
+}
+/* ーーーーーーーPORTFOLIOーーーーーーー */
+
+/* ーーーーーーーCONTACTーーーーーーー */
+#wrap #div5 {
+  background-color: #bde0fe84;
+}
 ::-webkit-scrollbar {
   display: none;
 }
-
 #fst_content {
   margin-top: 100px;
 }

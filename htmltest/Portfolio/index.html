@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>포트폴리오</title>
+    <title>ポートフォリオ</title>
     
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/skills.css">
@@ -29,16 +29,25 @@
             <button onclick="fnMove('5')" >CONTACT</button>
         </header>
         <div id="div1"  class="contents">
-            HOME    
+               
         </div>
         <div id="div2"  class="contents">
-                <div><img src="/image/다운로드.jpeg"></div>
-                <div> <p>苗字: 韓(ハン)</p><p>名前: 燦奎(チャンギュ)</p><p>소속: 2022/03/? ~ 2022/10/? GlobalIn</p></div>
+                <div>
+                    <img src="/image/다운로드.jpeg">
+                </div>
+                <div>
+                    <p style="padding-top: 6%;">苗字：韓　-　ハン</p>
+                    <p>名前：燦奎　-　チャンギュ</p>
+                    <p>年齢：27歳　-　平成7年1月7日生まれ</p>
+                    <p>所属：令和4年03月29日 ~ 令和4年10月13日　-　機関：Global-In </p>
+                    <p>学歴：キョンギ道ソンナムシ市ガチォン大学 食品生物工学学科 令和3年卒業</p>
+                </div>
         </div>
         <div id="div3"  class="contents">
             <div class="wrap">
                 <div><h3>My Skill Set</h3></div>
-                <div id="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, cum neque! Quasi voluptatum dolores, commodi reiciendis cupiditate illum doloribus fugit iure repudiandae sed laudantium totam minus non labore odio aliquid!</div>
+                <div id="info">Global-Inという機関で7ヶ月の研修を受けながら培ったスキルです。<br>
+                    今後はバックエンド系の開発の業務に携わり、少しずつ専門性を高めていきたいと考えています。</div>
             
                 <div id="skillSetDiv">
                     <canvas id="programmingSkillSet"></canvas>
@@ -49,21 +58,22 @@
         </div>
         <div id="div5"  class="contents">
             CONTACT
+            <button onclick="fnMove('1')" >HOME</button>
         </div>
     </div>
 </body>
 
 <script>
-    // btn 클릭하면 스클롤 이동
+    // btnをクリックするとスクロール移動
 function fnMove(seq){
     var offset = $("#div" + seq).size() ? $("#div" + seq).offset():0;
     $('html, body').animate({scrollTop : offset.top}, 400);
 }
 
-// btn 클릭하면 class추가
+// btnをクリックするとclass追加
 $(document).on("click", "button", function(e) {
-    e.preventDefault(); // 기본으로 정의된 이벤트를 작동하지 못하게 하는 메서드
-    // .siblings() 객체와 동일한 위치에 있는 모든 객체 (자신을 제외한 형제요소)를 검색하는 메소드
+    e.preventDefault(); // 基本的に定義されたイベントを作動させないメソッド
+    // .siblings()オブジェクトと同じ位置にあるすべてのオブジェクト(自分以外の兄弟要素)を検索するメソッド
     $(this).addClass("active").siblings().removeClass("active");
 
     fnMove($(this).data("n"));

@@ -5,6 +5,7 @@ html,body {
   height: 100%;
   font-family: 'Noto Sans JP', sans-serif;
 }
+
 /* ーーーーーーーheader ボタンーーーーーーー */
 .header {
   display: flex;
@@ -35,6 +36,7 @@ html,body {
   color: #2f78b984;
   transition: 0.5s;
 }
+
 /* ーーーーーーー全体的ーーーーーーー */
 #wrap {
   position: relative;
@@ -51,6 +53,7 @@ html,body {
   font-weight: bolder;
   -ms-overflow-style: none;
 }
+
 /* ーーーーーーーHOMEーーーーーーー */
 #wrap #div1 {
   background-color: #bde0fe84;
@@ -81,8 +84,7 @@ html,body {
   height: 100%;
 }
 #div2 p {
-  height: 20%;
-  line-height: rem;
+  height: 10%;
 }
 
 /* ーーーーーーーMY SKILL SETーーーーーーー */
@@ -118,16 +120,25 @@ html,body {
   height:350;
   height: 255px; 
   width: 255px;
-  padding: 5%;
+  padding: 5% 9% 5% 5%;
   background-color: white;
   border-radius: 4%;
   
 }
+
 /* ーーーーーーーPORTFOLIOーーーーーーー */
 
 /* ーーーーーーーCONTACTーーーーーーー */
 #wrap #div5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #bde0fe84;
+}
+#wrap #div5 button {
+  justify-content: end;
+
 }
 ::-webkit-scrollbar {
   display: none;

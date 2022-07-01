@@ -1,7 +1,6 @@
 package com.DBex;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 /*
@@ -28,33 +27,54 @@ import java.sql.SQLException;
  *
  * 		※※※※※※ 바인딩 변수는 절대 컬럼명에는 사용할 수 없다.
  *
+ * 		PreparedStatement는 PreparedStatement의 바인딩 변수에 값을 지정해주는 setXXX() method를 제공한다.
+ *
  */
 
 public class jdbcEx05 {
 	public static void main(String[] args) {
 
+		// PreparedStatement를 사용하는 경우 반드시
+		// SQL쿼리에서 실제 값으로 대체될 부분을 ?로 처리한다. ★★★★★★★★★★
+		// ?는 DataBase에서 SQL실행 시에 실제 값으로 대체된다.
+
 		StringBuffer sql = new StringBuffer();
 
-		sql.append(""); // 한줄로 쭉 써도 된다, 검색 안됨
-		sql.append("");
-		sql.append("");
+		sql.append("insert into professor "); // 한줄로 쭉 써도 된다, 검색 안됨
+		sql.append("values(?,?,?,?,?,sysdate,?,?)");
 
 		Connection con = null;
-		PreparedStatement pstmt = null; //
+		PreparedStatement pstmt = null; // 동적 객체 선언
 
 		try {
-			// 드라이버 검색
-			Class.forName("oracle.jdbc.driver.OracleDriver");
+			// 데이터베이스 연결
+			con = ConnUtil.getConnection();
 
-			String url = "jdbc:oracle:thin:@localhost:1521:orcl";
-			String id = "scott";
-			String password = "tiger";
+			pstmt = con.prepareStatement(sql.toString());
+			// 쿼리의 파라미터 세팅
+			// 쿼리의 ?(바인딩 변수)에 대체될 실제값을 지정한다.
 
-			// DB연결
-			con = DriverManager.getConnection(url, id, password);
+			pstmt.setInt(1, 9920);
+			pstmt.setString(2, "홍길동");
+			pstmt.setString(3, "gildongHong");
+			pstmt.setString(4, "점임");
+			pstmt.setInt(5, 250);
+			pstmt.setInt(6, 32);
+			pstmt.setInt(7, 203);
 
-		} catch (ClassNotFoundException cnfe) {
-			cnfe.printStackTrace();
+			// 쿼리 실행
+			int i = pstmt.executeUpdate(); // 이걸 업데이트로 처리한다. db에 변동이 있을 때, select일 땐 next를 사용
+
+//			if (pstmt.executeUpdate() == 1) {
+//
+//				System.out.println("삽입성공");
+//
+//			} else {
+//				System.out.println("삽입실패");
+//			}
+
+			System.out.println(i + "개 행이 추가 되었습니다.");
+
 		} catch (SQLException ss) {
 			ss.printStackTrace();
 		} finally {

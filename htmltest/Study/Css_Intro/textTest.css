@@ -1,0 +1,26 @@
+h1{
+    width: 20%;
+    text-decoration: underline;
+    font-weight: normal;
+    text-align: center;
+    font-size: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* 앞의 폰트가 적용 안되면 뒤에 폰트가 알아서 적용 된다.*/
+}
+h2{
+    text-align: left;
+    text-decoration: line-through;
+    font-family: fantasy;
+}
+h3{
+    
+    text-decoration: red underline wavy;
+}
+a{
+    color: green;
+    text-decoration: none;
+}
+p{
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}

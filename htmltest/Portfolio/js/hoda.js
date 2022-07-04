@@ -1,8 +1,8 @@
 $(document).ready(function(){
 var dataLiteracy = {
-    labels: ['Java', 'Html', 'Css', 'Oracle', 'Spring', 'JavaScript'],
+    labels: ['Java', 'Html', 'Css', 'Oracle', 'JavaScript'],
     datasets: [{
-      data: [3, 2, 3, 2, 3, 4],
+      data: [3, 2, 3, 2, 3],
       label: 'My Skills Level',
       backgroundColor: 'rgba(237, 146, 159, 0.2)',
       borderColor: 'rgba(237, 146, 159, 1)',

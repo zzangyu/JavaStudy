@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.Calendar"/>
-    <fullyQualifiedTypeName name="java.io.File"/>
-    <fullyQualifiedTypeName name="com.sun.tools.javac.code.Type.ForAll"/>
-    <fullyQualifiedTypeName name="java.io.DataOutputStream"/>
-    <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
-    <fullyQualifiedTypeName name="com.ioex.BufferedWriterEx"/>
-    <fullyQualifiedTypeName name="java.io.FileReader"/>
-    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
-    <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
     <fullyQualifiedTypeName name="java.io.BufferedReader"/>
     <fullyQualifiedTypeName name="java.io.PrintWriter"/>
     <fullyQualifiedTypeName name="com.ioex.FileOutputStreamEx01"/>
@@ -34,8 +25,6 @@
     <fullyQualifiedTypeName name="com.awtex.ButtonEx"/>
     <fullyQualifiedTypeName name="com.awtex.TextEx"/>
     <fullyQualifiedTypeName name="com.awtex.ListEx"/>
-    <fullyQualifiedTypeName name="java.awt.List"/>
-    <fullyQualifiedTypeName name="java.awt.Button"/>
     <fullyQualifiedTypeName name="java.awt.GridBagLayout"/>
     <fullyQualifiedTypeName name="com.awtex.ChoiceEx"/>
     <fullyQualifiedTypeName name="java.awt.Checkbox"/>
@@ -43,21 +32,32 @@
     <fullyQualifiedTypeName name="com.awtex.CheckboxEx"/>
     <fullyQualifiedTypeName name="com.awtex.MenuEx"/>
     <fullyQualifiedTypeName name="java.awt.CheckboxMenuItem"/>
-    <fullyQualifiedTypeName name="java.awt.Label"/>
     <fullyQualifiedTypeName name="javax.swing.text.StyledEditorKit.ItalicAction"/>
     <fullyQualifiedTypeName name="java.awt.Font"/>
     <fullyQualifiedTypeName name="com.awtex.FileDialogEx"/>
     <fullyQualifiedTypeName name="java.awt.FileDialog"/>
-    <fullyQualifiedTypeName name="com.awtex.WinEvent"/>
-    <fullyQualifiedTypeName name="java.awt.TextField"/>
     <fullyQualifiedTypeName name="java.awt.Panel"/>
-    <fullyQualifiedTypeName name="java.awt.BorderLayout"/>
     <fullyQualifiedTypeName name="com.awtex.DialogEx"/>
-    <fullyQualifiedTypeName name="java.awt.GridLayout"/>
-    <fullyQualifiedTypeName name="java.awt.FlowLayout"/>
     <fullyQualifiedTypeName name="com.awteventex.WindowEventEx02"/>
     <fullyQualifiedTypeName name="com.awteventex.WindowEventEx03"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="com.awteventex.WindowEventEx04"/>
     <fullyQualifiedTypeName name="java.awt.event.WindowAdapter"/>
+    <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
+    <fullyQualifiedTypeName name="com.awteventex.ActionEventEx01"/>
+    <fullyQualifiedTypeName name="com.awteventex.ActionEventEx02"/>
+    <fullyQualifiedTypeName name="java.awt.MenuBar"/>
+    <fullyQualifiedTypeName name="com.awteventex.ActionEvent04"/>
+    <fullyQualifiedTypeName name="java.awt.CardLayout"/>
+    <fullyQualifiedTypeName name="java.awt.BorderLayout"/>
+    <fullyQualifiedTypeName name="com.awteventex.MouseEventEx"/>
+    <fullyQualifiedTypeName name="java.awt.Button"/>
+    <fullyQualifiedTypeName name="java.awt.FlowLayout"/>
+    <fullyQualifiedTypeName name="com.awteventex.MouseMotionEventEx"/>
+    <fullyQualifiedTypeName name="com.awtex.WinEvent"/>
+    <fullyQualifiedTypeName name="com.awteventex.ItemEventEx"/>
+    <fullyQualifiedTypeName name="java.awt.Label"/>
+    <fullyQualifiedTypeName name="java.awt.TextField"/>
+    <fullyQualifiedTypeName name="java.awt.List"/>
+    <fullyQualifiedTypeName name="java.awt.GridLayout"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>

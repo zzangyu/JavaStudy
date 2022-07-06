@@ -9,6 +9,8 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JSlider;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
 
 public class JSliderEx extends JFrame {
 
@@ -65,11 +67,32 @@ public class JSliderEx extends JFrame {
 		add("North", rgb);
 		add("South", p1);
 		add("Center", p2);
-
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		setBounds(300, 200, 400, 300);
 		setVisible(true);
 
+		red.addChangeListener(new Sevent());
+		blue.addChangeListener(new Sevent());
+		green.addChangeListener(new Sevent());
+
+	}
+
+	class Sevent implements ChangeListener {
+		@Override
+		public void stateChanged(ChangeEvent e) {
+			JSlider source = (JSlider) e.getSource();
+			if (e.getSource() == red) {
+				r = source.getValue();
+			}
+			if (e.getSource() == green) {
+				g = source.getValue();
+			}
+			if (e.getSource() == blue) {
+				b = source.getValue();
+			}
+			p2.setBackground(new Color(r, g, b));
+			rgb.setText("RGB(" + r + ", " + g + ", " + b + ")");
+		}
 	}
 
 	public static void main(String[] args) {

@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.awt.List"/>
-    <fullyQualifiedTypeName name="com.awteventex.KeyEventEx"/>
-    <fullyQualifiedTypeName name="java.awt.TextField"/>
-    <fullyQualifiedTypeName name="java.awt.Button"/>
-    <fullyQualifiedTypeName name="java.awt.Panel"/>
     <fullyQualifiedTypeName name="com.swingex.WindowExam01"/>
     <fullyQualifiedTypeName name="java.awt.Dimension"/>
     <fullyQualifiedTypeName name="com.awtex.WinEvent"/>
@@ -32,7 +27,6 @@
     <fullyQualifiedTypeName name="javax.swing.JColorChooser"/>
     <fullyQualifiedTypeName name="com.swingex.JOptionPaneEx"/>
     <fullyQualifiedTypeName name="java.awt.FlowLayout"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.nio.charset.CharsetDecoder"/>
     <fullyQualifiedTypeName name="javax.swing.table.TableModel"/>
     <fullyQualifiedTypeName name="com.swingex.PrintActionListener"/>
@@ -50,14 +44,20 @@
     <fullyQualifiedTypeName name="com.swingex.HorseMain"/>
     <fullyQualifiedTypeName name="java.lang.InterruptedException"/>
     <fullyQualifiedTypeName name="java.awt.event.KeyAdapter"/>
-    <fullyQualifiedTypeName name="java.net.UnknownHostException"/>
     <fullyQualifiedTypeName name="java.net.InetAddress"/>
     <fullyQualifiedTypeName name="java.net.URL"/>
-    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
-    <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
     <fullyQualifiedTypeName name="com.netex.URLEx"/>
     <fullyQualifiedTypeName name="java.net.MalformedURLException"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="java.net.ServerSocket"/>
+    <fullyQualifiedTypeName name="com.unicastex.UnicastServer"/>
+    <fullyQualifiedTypeName name="com.unicastex.UnicastServerThread"/>
+    <fullyQualifiedTypeName name="com.unicastex.UnicastClient"/>
+    <fullyQualifiedTypeName name="java.io.BufferedWriter"/>
+    <fullyQualifiedTypeName name="java.io.OutputStreamWriter"/>
+    <fullyQualifiedTypeName name="java.net.UnknownHostException"/>
+    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.net.Socket"/>
 </qualifiedTypeNameHistroy>

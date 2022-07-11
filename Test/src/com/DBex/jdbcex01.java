@@ -35,7 +35,7 @@ import java.sql.Statement;
 *   PreparedStatment(µ¿Àû)
 *    -PreparedStatment pmst = con.prepareStatement(Äõ¸®);
 *
-*       ResultSet re = stmt.ecequte(Query); //select
+*       ResultSet re = stmt.execute(Query); //select
 *  ResultSet re = stmt.ecequte(Query);insert, update, delete
 *
 *

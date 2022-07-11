@@ -6,6 +6,8 @@ import java.awt.Container;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
 
@@ -71,7 +73,7 @@ public class MultiChatClient implements ActionListener, Runnable {
 		loginPanel.setLayout(new BorderLayout());
 		idInput = new JTextField(15);
 		loginButton = new JButton("로그인");
-
+		loginButton.addActionListener(this);
 		// 대화명 라벨
 		label1 = new JLabel("대화명");
 
@@ -85,6 +87,7 @@ public class MultiChatClient implements ActionListener, Runnable {
 		logoutPanel.setLayout(new BorderLayout());
 		label2 = new JLabel(); // 공간만 만들어 놓은 것
 		logoutButton = new JButton("로그아웃");
+		logoutButton.addActionListener(this);
 
 		logoutPanel.add(label2, BorderLayout.CENTER);
 		logoutPanel.add(logoutButton, BorderLayout.EAST);
@@ -93,8 +96,10 @@ public class MultiChatClient implements ActionListener, Runnable {
 		msgPanel = new JPanel();
 		msgPanel.setLayout(new BorderLayout());
 		msgInput = new JTextField(30);
+		msgInput.addActionListener(this);
 
 		exitButton = new JButton("종료");
+		exitButton.addActionListener(this);
 
 		msgPanel.add(msgInput, BorderLayout.CENTER);
 		msgPanel.add(exitButton, BorderLayout.EAST);
@@ -130,16 +135,94 @@ public class MultiChatClient implements ActionListener, Runnable {
 
 	@Override
 	public void run() {
+		// thread는 수신 메시지를 처리하는 변수가 필요하다.
+		String msg;
+		String[] rmsg;
+
+		status = true;
+
+		while (status) {
+
+			try {
+				msg = inMsg.readLine();
+				rmsg = msg.split("/");
+
+				// JTextArea에 수신된 메시지 추가
+				msgOut.append(rmsg[0] + ">" + rmsg[1] + "\n");
+
+				// 커서를 현재 대화 메시지에 표시한다. 문서의 맨 마지막에 나타내기 때문에 문서의 길이도 알아야한다.
+				msgOut.setCaretPosition(msgOut.getDocument().getLength());
+
+			} catch (IOException ie) {
+				status = false;
+			}
+
+		}
+		System.out.println("[MultiChatClient]" + thread.getName() + "종료됨");
 
 	}
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
+		Object obj = e.getSource();
+
+		// 종료 버튼 처리
+		if (obj == exitButton) {
+			System.exit(0);
+		} else if (obj == loginButton) {
+			id = idInput.getText(); // 아이디 문자열을 가지고옴
+			label2.setText("대화명" + id);
+			clayout.show(tab, "logout");
+
+			// 서버와 연결 메소드 호출
+			connectServer();
+
+		} else if (obj == logoutButton) {
+			// 로그아웃 메시지 전송
+			outMsg.println(id + "/" + "로그아웃");
+			// 대화창 클리어
+			msgOut.setText("");
+			// 로그인 패널로 전환 (로그아웃 했으니까!)
+			clayout.show(tab, "login");
+			outMsg.close();
+			try {
+				inMsg.close();
+				socket.close();
+			} catch (IOException io) {
+				io.printStackTrace();
+			}
+			status = false;
+
+		} else if (obj == msgInput) {
+			// 메시지 전송
+			outMsg.println(id + "/" + msgInput.getText());
+			// 입력창을 초기화
+			msgInput.setText("");
+		}
+
+	}
+
+	public void connectServer() {
+		try {
+			socket = new Socket(ip, 4000);
+			System.out.println("[Client]Server 연결 성공 !!");
+			inMsg = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+			outMsg = new PrintWriter(socket.getOutputStream(), true);
+			// 서버에 로그인 메시지를 전달한다.
+			outMsg.println(id + "/" + "login");
+
+			// thread message 수신을 위한 thread 생성
+			thread = new Thread(this);
+			thread.start();
+
+		} catch (Exception e) {
+			System.out.println("[MultiChatClient]connectionServer() Exception 발생 !!!");
+		}
 
 	}
 
 	public static void main(String[] args) {
-		new MultiChatClient("127.0.0.1");
+		new MultiChatClient("192.168.0.17");
 	}
 
 }

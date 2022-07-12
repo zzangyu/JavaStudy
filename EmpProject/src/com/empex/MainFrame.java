@@ -7,15 +7,18 @@ public class MainFrame extends JFrame {
 
 	private JTabbedPane tp; // 탭 메뉴를 만듦
 	private AddPane ap;
+	private FindPane fp;
 
 	public MainFrame() {
 
 		tp = new JTabbedPane();
 		ap = new AddPane();
-
+		fp = new FindPane();
 		tp.addTab("사원 정보 입력", ap);
+		tp.addTab("사원 정보 조회", fp);
 
 		getContentPane().add(tp);
+
 		setTitle("사원관리 프로그램");
 
 		pack();

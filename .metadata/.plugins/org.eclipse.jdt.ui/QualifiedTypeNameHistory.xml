@@ -1,16 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="javax.swing.border.EtchedBorder"/>
-    <fullyQualifiedTypeName name="javax.swing.border.BevelBorder"/>
-    <fullyQualifiedTypeName name="javax.swing.border.SoftBevelBorder"/>
-    <fullyQualifiedTypeName name="javax.swing.border.MatteBorder"/>
-    <fullyQualifiedTypeName name="com.swingex.JComboxEx"/>
-    <fullyQualifiedTypeName name="com.swingex.JSliderEx"/>
-    <fullyQualifiedTypeName name="javax.swing.JSlider"/>
-    <fullyQualifiedTypeName name="java.awt.Label"/>
-    <fullyQualifiedTypeName name="java.awt.GridLayout"/>
-    <fullyQualifiedTypeName name="java.awt.Font"/>
-    <fullyQualifiedTypeName name="com.swingex.JColorChooserEx"/>
     <fullyQualifiedTypeName name="javax.swing.JDialog"/>
     <fullyQualifiedTypeName name="java.awt.MenuBar"/>
     <fullyQualifiedTypeName name="javax.swing.JMenu"/>
@@ -29,7 +18,6 @@
     <fullyQualifiedTypeName name="com.swingex.AddActionListener"/>
     <fullyQualifiedTypeName name="java.awt.Color"/>
     <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
-    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
     <fullyQualifiedTypeName name="java.awt.Toolkit"/>
     <fullyQualifiedTypeName name="com.swingex.HorseMain"/>
     <fullyQualifiedTypeName name="java.lang.InterruptedException"/>
@@ -60,4 +48,16 @@
     <fullyQualifiedTypeName name="java.awt.BorderLayout"/>
     <fullyQualifiedTypeName name="com.multiex.MultiChatClient"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.sql.DriverManager"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
+    <fullyQualifiedTypeName name="java.awt.event.ItemListener"/>
+    <fullyQualifiedTypeName name="java.awt.GridLayout"/>
+    <fullyQualifiedTypeName name="javax.swing.border.EtchedBorder"/>
+    <fullyQualifiedTypeName name="javax.swing.JComboBox"/>
+    <fullyQualifiedTypeName name="javax.swing.JTabbedPane"/>
+    <fullyQualifiedTypeName name="com.empex.AddPane"/>
+    <fullyQualifiedTypeName name="com.empex.MainFrame"/>
+    <fullyQualifiedTypeName name="com.empex.EmployeeVO"/>
+    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
 </qualifiedTypeNameHistroy>

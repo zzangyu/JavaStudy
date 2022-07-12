@@ -16,7 +16,6 @@ public class EmployModel extends AbstractTableModel {
 	ArrayList<EmployeeVO> list;
 
 	public EmployModel() {
-
 		// 열의 개수와 행의 개수를 알아야 2차원 배열을 선언할 수 있다.
 		// 테이블에서 column의 이름을 얻어와서 1차원 배열로 선언한다.
 
@@ -32,6 +31,7 @@ public class EmployModel extends AbstractTableModel {
 
 		for (int index = 0; index < rowCount; index++) {
 			emVo = list.get(index);
+
 			data[index][0] = emVo.getNo();
 			data[index][1] = emVo.getName();
 			data[index][2] = emVo.getJobGrade();

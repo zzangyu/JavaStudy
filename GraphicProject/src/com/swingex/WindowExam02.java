@@ -13,17 +13,17 @@ public class WindowExam02 {
 
 	public static void main(String[] args) {
 
-		JFrame frame = new JFrame("Âü°¡ÀÚ ¸í´Ü ÇÁ·Î±×·¥");
+		JFrame frame = new JFrame("adsadasds");
 
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setPreferredSize(new Dimension(300, 150));
 
 		Container contentPane = frame.getContentPane();
 
-		String[] colNames = { "ÀÌ¸§", "³ªÀÌ", "¼ºº°" };
+		String[] colNames = { "ï¿½Ì¸ï¿½", "ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½" };
 		Object data[][] = {
 
-				{ "È«±æµ¿", 24, "³²ÀÚ" }, { "»çÅä¹Ì", 21, "¿©ÀÚ" }, { "¹ÚÈ¿½Å", 30, "³²ÀÚ" },
+				{ "È«ï¿½æµ¿", 24, "ï¿½ï¿½ï¿½ï¿½" }, { "ï¿½ï¿½ï¿½ï¿½ï¿½", 21, "ï¿½ï¿½ï¿½ï¿½" }, { "ï¿½ï¿½È¿ï¿½ï¿½", 30, "ï¿½ï¿½ï¿½ï¿½" },
 
 		};
 
@@ -31,7 +31,7 @@ public class WindowExam02 {
 		JScrollPane scrollpane = new JScrollPane(table);
 
 		contentPane.add(scrollpane, BorderLayout.CENTER);
-		JButton button = new JButton("Ãâ·Â");
+		JButton button = new JButton("ï¿½ï¿½ï¿½");
 		contentPane.add(button, BorderLayout.SOUTH);
 
 		button.addActionListener(new PrintActionListener(table));

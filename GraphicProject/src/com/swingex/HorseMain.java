@@ -80,7 +80,7 @@ public class HorseMain extends JFrame implements Runnable {
 		new Thread(this).start();
 	}
 
-	// �ʱ�ȭ �޼ҵ�
+	// �ʱ�ȭ �޼ҵ�
 	public void initHorse() {
 		horse = new Image[11];
 		for (int i = 0; i < horse.length; i++) {

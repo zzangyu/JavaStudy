@@ -6,8 +6,10 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value=""/>
+		<item key="selection" value="Scroll"/>
 		<list key="findhistory">
+			<item value="Scroll"/>
+			<item value="scroll"/>
 			<item value="대화명"/>
 			<item value="connec"/>
 			<item value=" {"/>
@@ -29,5 +31,19 @@
 	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
 		<item key="DIALOG_X_ORIGIN" value="692"/>
 		<item key="DIALOG_Y_ORIGIN" value="362"/>
+	</section>
+	<section name="org.eclipse.wst.html.ui.internal.preferences.ui.HTMLTemplatePreferencePage$HTMLEditTemplateDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="82"/>
+		<item key="DIALOG_Y_ORIGIN" value="140"/>
+		<item key="DIALOG_WIDTH" value="878"/>
+		<item key="DIALOG_HEIGHT" value="784"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+	<section name="org.eclipse.wst.css.ui.internal.preferences.ui.CSSTemplatePreferencePage$CSSEditTemplateDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="11"/>
+		<item key="DIALOG_Y_ORIGIN" value="52"/>
+		<item key="DIALOG_WIDTH" value="715"/>
+		<item key="DIALOG_HEIGHT" value="417"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
 	</section>
 </section>

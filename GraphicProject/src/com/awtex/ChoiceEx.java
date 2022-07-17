@@ -8,8 +8,8 @@ import java.awt.Label;
 
 public class ChoiceEx extends Frame {
 
-	private Label la = new Label("»ıÀÏ");
-	private Button bt = new Button("È®ÀÎ");
+	private Label la = new Label("ê¸°ëª¨ë ");
+	private Button bt = new Button("ì•„ì•„");
 	private Choice co = new Choice();
 
 	public ChoiceEx() {
@@ -17,11 +17,11 @@ public class ChoiceEx extends Frame {
 		setLayout(new GridLayout(3, 1));
 
 		add(la);
-		add(co); // drop-down ¹öÆ°À» ¸¸µé¾îÁØ °Í! ¡å ´©¸£¸é ¸ñ·Ï ÁÂ¸£¸¤ ³ª¿È
+		add(co); // drop-down ï¿½ï¿½Æ°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½! ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½Â¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		add(bt);
 
 		for (int i = 1; i <= 12; i++) {
-			co.add(String.valueOf(i) + "¿ù");
+			co.add(String.valueOf(i) + "ë©”ë¡±");
 		}
 
 		WinEvent we = new WinEvent();

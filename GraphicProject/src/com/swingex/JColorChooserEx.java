@@ -15,10 +15,10 @@ import javax.swing.JTextArea;
 public class JColorChooserEx extends JFrame implements ActionListener {
 
 	JMenuBar mb = new JMenuBar();
-	JMenu mnuSelect = new JMenu("¼±ÅÃ");
-	JMenuItem mnuColor = new JMenuItem("»ö»ó");
+	JMenu mnuSelect = new JMenu("123");
+	JMenuItem mnuColor = new JMenuItem("456");
 
-	JLabel l = new JLabel("Ãâ·ÂÃ¢");
+	JLabel l = new JLabel("11");
 	JTextArea ta = new JTextArea();
 
 	public JColorChooserEx() {
@@ -43,8 +43,8 @@ public class JColorChooserEx extends JFrame implements ActionListener {
 	public void actionPerformed(ActionEvent e) {
 		if (e.getSource() == mnuColor) {
 			JColorChooser chooser = new JColorChooser();
-			Color col = chooser.showDialog(this, "»ö»óÀ» °í¸£¼¼¿ä", Color.blue);
-			l.setText("¼±ÅÃÇÑ »ö»óÀº " + col);
+			Color col = chooser.showDialog(this, "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½", Color.blue);
+			l.setText("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ " + col);
 			ta.setBackground(col);
 		}
 	}

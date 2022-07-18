@@ -266,5 +266,6 @@ public class SetFrame extends JFrame implements ActionListener {
 			jf.setSize(300, 500);
 			jf.setVisible(true);
 		}
+
 	}
 }

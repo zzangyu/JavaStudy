@@ -164,6 +164,7 @@ public class SetFrame extends JFrame implements ActionListener {
 
 		mi1.addActionListener(this);
 		mi2.addActionListener(this);
+		mi3.addActionListener(this);
 
 		frame.setSize(800, 500);
 		frame.setVisible(true);
@@ -265,6 +266,10 @@ public class SetFrame extends JFrame implements ActionListener {
 			contentPane.add(jsp);
 			jf.setSize(300, 500);
 			jf.setVisible(true);
+		}
+		if (e.getSource() == mi3) {
+			Calculator cal = new Calculator();
+
 		}
 
 	}

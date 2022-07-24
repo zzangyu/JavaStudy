@@ -250,7 +250,6 @@ public class SetFrame extends JFrame implements ActionListener {
 				FileReader r = new FileReader(path);
 				int k;
 				for (;;) {
-
 					k = r.read();
 					if (k == -1)
 						break;
